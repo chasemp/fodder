@@ -271,6 +271,10 @@
             padding: 2px 8px;
             margin-left: var(--space-xs);
         }
+
+        .status-item .status-icon {
+            color: var(--color-gold);
+        }
     </style>
 </head>
 <body class="tags-page">
@@ -288,9 +292,15 @@
         <span><strong id="available-prompts">0</strong> prompts available</span>
     </div>
 
-    <!-- Seen/Hidden Management -->
+    <!-- Seen/Hidden/Favs Management -->
     <div class="card-status-section">
         <div class="status-row">
+            <div class="status-item">
+                <span class="status-icon">★</span>
+                <span class="status-label">Favs:</span>
+                <strong id="fav-count">0</strong>
+                <button class="btn btn-small btn-text" id="clear-fav-btn">Clear</button>
+            </div>
             <div class="status-item">
                 <span class="status-icon">👁️</span>
                 <span class="status-label">Seen:</span>
@@ -567,26 +577,30 @@
             document.getElementById('enable-all-btn-top').addEventListener('click', enableAll);
             document.getElementById('disable-all-btn-top').addEventListener('click', disableAll);
 
-            // Seen/Hidden clear buttons
+            // Seen/Hidden/Fav clear buttons
             document.getElementById('clear-seen-btn').addEventListener('click', clearAllSeen);
             document.getElementById('clear-hidden-btn').addEventListener('click', clearAllHidden);
+            document.getElementById('clear-fav-btn').addEventListener('click', clearAllFavs);
         }
 
         // ============================================
-        // Seen/Hidden Management
+        // Seen/Hidden/Fav Management
         // ============================================
         function loadSeenHiddenCounts() {
             try {
                 const seenPrompts = localStorage.getItem('fodder_seenPrompts');
                 const hiddenPrompts = localStorage.getItem('fodder_hiddenPrompts');
+                const favPrompts = localStorage.getItem('fodder_favPrompts');
                 
                 const seenCount = seenPrompts ? JSON.parse(seenPrompts).length : 0;
                 const hiddenCount = hiddenPrompts ? JSON.parse(hiddenPrompts).length : 0;
+                const favCount = favPrompts ? JSON.parse(favPrompts).length : 0;
                 
                 document.getElementById('seen-count').textContent = seenCount;
                 document.getElementById('hidden-count').textContent = hiddenCount;
+                document.getElementById('fav-count').textContent = favCount;
             } catch (e) {
-                console.error('Error loading seen/hidden counts:', e);
+                console.error('Error loading seen/hidden/fav counts:', e);
             }
         }
 
@@ -602,6 +616,13 @@
                 localStorage.removeItem('fodder_hiddenPrompts');
                 document.getElementById('hidden-count').textContent = '0';
                 updateStats(); // Recalculate available prompts
+            }
+        }
+
+        function clearAllFavs() {
+            if (confirm('Clear all favorites? This cannot be undone.')) {
+                localStorage.removeItem('fodder_favPrompts');
+                document.getElementById('fav-count').textContent = '0';
             }
         }
 

@@ -713,6 +713,39 @@ body {
     color: var(--color-exclude);
 }
 
+/* Favorite button */
+.fav-btn {
+    font-size: 1.25rem;
+    padding: var(--space-xs) var(--space-sm);
+    background: transparent;
+    border: none;
+}
+
+.fav-btn .fav-star {
+    transition: all var(--transition-fast);
+}
+
+.fav-btn.fav-active .fav-star {
+    color: var(--color-gold);
+    text-shadow: 0 0 4px var(--color-gold);
+}
+
+.fav-btn:hover .fav-star {
+    transform: scale(1.2);
+}
+
+/* Favs filter button in controls */
+#favs-filter-btn {
+    font-size: 1rem;
+    transition: all var(--transition-fast);
+}
+
+#favs-filter-btn.favs-active {
+    color: var(--color-gold);
+    background: var(--color-espresso);
+    text-shadow: 0 0 4px var(--color-gold);
+}
+
 /* Seen indicator on card */
 .prompt-card.is-seen {
     opacity: 0.85;

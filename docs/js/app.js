@@ -17,6 +17,8 @@
         persistentExcludedTags: new Set(), // Tags excluded via settings page
         seenPrompts: new Set(), // Prompts marked as seen
         hiddenPrompts: new Set(), // Prompts marked as hidden
+        favPrompts: new Set(), // Prompts marked as favorite
+        showOnlyFavs: false, // Filter to show only favorites
         currentMode: 'include', // 'include' or 'exclude'
         currentPromptIndex: -1,
         allTags: new Map(), // tag -> count
@@ -53,6 +55,8 @@
         markSeenBtn: document.getElementById('mark-seen-btn'),
         hideCardBtn: document.getElementById('hide-card-btn'),
         cardActions: document.getElementById('card-actions'),
+        favBtn: document.getElementById('fav-btn'),
+        favsFilterBtn: document.getElementById('favs-filter-btn'),
         installBtn: document.getElementById('install-btn'),
         dismissInstall: document.getElementById('dismiss-install'),
         // Filter toggle elements
@@ -79,6 +83,7 @@
         buildTagCloud();
         updateCounts();
         loadSavedState();
+        updateFavsFilterButton();
         attachEventListeners();
         registerServiceWorker();
         setupInstallPrompt();
@@ -144,6 +149,11 @@
             if (state.excludeTags.size > 0) {
                 const hasExcludedTag = prompt.tags.some(tag => state.excludeTags.has(tag));
                 if (hasExcludedTag) return false;
+            }
+
+            // If showing only favorites, filter to those
+            if (state.showOnlyFavs && !state.favPrompts.has(prompt.id)) {
+                return false;
             }
 
             return true;
@@ -321,6 +331,13 @@
             elements.markSeenBtn.classList.toggle('seen-active', isSeen);
             elements.markSeenBtn.textContent = isSeen ? '👁️ Seen ✓' : '👁️ Seen';
         }
+
+        // Update fav button
+        const isFav = state.favPrompts.has(prompt.id);
+        if (elements.favBtn) {
+            elements.favBtn.classList.toggle('fav-active', isFav);
+            elements.favBtn.querySelector('.fav-star').textContent = isFav ? '★' : '☆';
+        }
     }
 
     function toggleSeenPrompt() {
@@ -362,6 +379,52 @@
         } else {
             elements.promptText.textContent = "No more prompts available!";
             elements.cardTags.innerHTML = '';
+        }
+    }
+
+    function toggleFavPrompt() {
+        const currentPrompt = state.filteredPrompts[state.currentPromptIndex];
+        if (!currentPrompt) return;
+
+        if (state.favPrompts.has(currentPrompt.id)) {
+            state.favPrompts.delete(currentPrompt.id);
+        } else {
+            state.favPrompts.add(currentPrompt.id);
+        }
+
+        // Save to localStorage
+        localStorage.setItem('fodder_favPrompts', JSON.stringify([...state.favPrompts]));
+
+        // Update display
+        displayPrompt(currentPrompt);
+        updateFavsFilterButton();
+    }
+
+    function toggleFavsFilter() {
+        state.showOnlyFavs = !state.showOnlyFavs;
+        updateFavsFilterButton();
+        filterPrompts();
+        
+        // Show first prompt from filtered set
+        if (state.filteredPrompts.length > 0) {
+            state.currentPromptIndex = 0;
+            displayPrompt(state.filteredPrompts[0]);
+            updateCounts();
+        } else {
+            elements.promptText.textContent = state.showOnlyFavs 
+                ? "No favorites yet! Star some cards first." 
+                : "No prompts match your filters.";
+            elements.cardTags.innerHTML = '';
+        }
+    }
+
+    function updateFavsFilterButton() {
+        if (elements.favsFilterBtn) {
+            elements.favsFilterBtn.classList.toggle('favs-active', state.showOnlyFavs);
+            elements.favsFilterBtn.textContent = state.showOnlyFavs ? '★' : '☆';
+            elements.favsFilterBtn.title = state.showOnlyFavs 
+                ? `Showing ${state.favPrompts.size} favorites (click to show all)` 
+                : `Show only favorites (${state.favPrompts.size})`;
         }
     }
 
@@ -478,7 +541,7 @@
                 state.persistentExcludedTags = new Set(JSON.parse(excludedTags));
             }
 
-            // Load seen/hidden prompts
+            // Load seen/hidden/fav prompts
             const seenPrompts = localStorage.getItem('fodder_seenPrompts');
             if (seenPrompts) {
                 state.seenPrompts = new Set(JSON.parse(seenPrompts));
@@ -486,6 +549,10 @@
             const hiddenPrompts = localStorage.getItem('fodder_hiddenPrompts');
             if (hiddenPrompts) {
                 state.hiddenPrompts = new Set(JSON.parse(hiddenPrompts));
+            }
+            const favPrompts = localStorage.getItem('fodder_favPrompts');
+            if (favPrompts) {
+                state.favPrompts = new Set(JSON.parse(favPrompts));
             }
 
             // Load session filter state
@@ -602,7 +669,7 @@
         elements.randomBtn.addEventListener('click', showRandomPrompt);
         elements.shuffleBtn.addEventListener('click', shufflePrompts);
 
-        // Seen/Hidden buttons
+        // Seen/Hidden/Fav buttons
         if (elements.markSeenBtn) {
             elements.markSeenBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
@@ -614,6 +681,15 @@
                 e.stopPropagation();
                 hideCurrentPrompt();
             });
+        }
+        if (elements.favBtn) {
+            elements.favBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                toggleFavPrompt();
+            });
+        }
+        if (elements.favsFilterBtn) {
+            elements.favsFilterBtn.addEventListener('click', toggleFavsFilter);
         }
 
         // Card tap for next prompt
