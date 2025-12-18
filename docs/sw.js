@@ -3,7 +3,7 @@
  * Enables offline functionality for the PWA
  */
 
-const CACHE_VERSION = '0.0.3';
+const CACHE_VERSION = '0.0.4';
 const CACHE_NAME = `fodder-cache-${CACHE_VERSION}`;
 
 // Assets to cache on install
