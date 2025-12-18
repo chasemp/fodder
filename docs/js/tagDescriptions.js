@@ -30,7 +30,7 @@ const TAG_DESCRIPTIONS = {
     "memories": {
         name: "Memories",
         category: "topic",
-        description: "Nostalgic questions about the past, childhood, and life experiences.",
+        description: "Nostalgic questions about the past, childhood, cherished moments, and life experiences.",
         icon: "📷"
     },
     "holidays": {
@@ -64,7 +64,7 @@ const TAG_DESCRIPTIONS = {
         icon: "🎬"
     },
     "nature": {
-        name: "Nature",
+        name: "Nature & Outdoors",
         category: "topic",
         description: "The outdoors, animals, environment, and natural world.",
         icon: "🌿"
@@ -118,7 +118,7 @@ const TAG_DESCRIPTIONS = {
     "reflection": {
         name: "Reflection",
         category: "type",
-        description: "Looking back on life, lessons learned, and personal growth.",
+        description: "Looking back on life, identifying emotions and patterns, lessons learned, and personal growth.",
         icon: "🔍"
     },
     "aspiration": {
@@ -158,26 +158,14 @@ const TAG_DESCRIPTIONS = {
     "deep": {
         name: "Deep",
         category: "mood",
-        description: "Thoughtful questions about values, meaning, and significant life topics.",
+        description: "Thoughtful questions that make you pause and think about values, meaning, and significant life topics.",
         icon: "🌊"
     },
     "heartwarming": {
         name: "Heartwarming",
         category: "mood",
-        description: "Questions that bring out gratitude, love, and positive emotions.",
+        description: "Warm, comforting questions that bring out gratitude, love, and positive emotions. Perfect for intimate gatherings.",
         icon: "💖"
-    },
-    "nostalgic": {
-        name: "Nostalgic",
-        category: "mood",
-        description: "Questions that transport you back to cherished moments.",
-        icon: "📼"
-    },
-    "thoughtful": {
-        name: "Thoughtful",
-        category: "mood",
-        description: "Questions that make you pause and really think before answering.",
-        icon: "🤔"
     },
     "adventurous": {
         name: "Adventurous",
@@ -185,13 +173,6 @@ const TAG_DESCRIPTIONS = {
         description: "Questions about risk, exploration, and stepping outside comfort zones.",
         icon: "🧭"
     },
-    "cozy": {
-        name: "Cozy",
-        category: "mood",
-        description: "Warm, comforting questions perfect for intimate gatherings.",
-        icon: "☕"
-    },
-
     // ==========================================
     // AUDIENCE TAGS
     // ==========================================
@@ -213,13 +194,6 @@ const TAG_DESCRIPTIONS = {
         description: "Questions better suited for mature discussions.",
         icon: "👔"
     },
-    "family-friendly": {
-        name: "Family Friendly",
-        category: "audience",
-        description: "Safe for mixed-age family gatherings.",
-        icon: "🏡"
-    },
-
     // ==========================================
     // SPECIAL CONTENT TAGS (from research)
     // ==========================================
@@ -258,12 +232,6 @@ const TAG_DESCRIPTIONS = {
         category: "special",
         description: "Questions designed for difficult but important conversations about diversity, inclusion, and social issues. Requires psychological safety.",
         icon: "🛡️"
-    },
-    "selfawareness": {
-        name: "Self-Awareness",
-        category: "emotional",
-        description: "Questions that help you identify your emotions, patterns, and triggers.",
-        icon: "🧘"
     },
     "gratitude": {
         name: "Gratitude",

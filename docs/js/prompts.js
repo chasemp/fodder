@@ -44,12 +44,12 @@ const PROMPTS = [
     {
         id: "17a8b9",
         text: "What's a food you hated as a child but love now?",
-        tags: ["food", "reflection", "experience", "nostalgic"]
+        tags: ["food", "reflection", "experience", "memories"]
     },
     {
         id: "2c3d4e",
         text: "What's your go-to comfort food when you're feeling down?",
-        tags: ["food", "preference", "cozy", "heartwarming"]
+        tags: ["food", "preference", "heartwarming", "heartwarming"]
     },
     {
         id: "5f6a7b",
@@ -64,7 +64,7 @@ const PROMPTS = [
     {
         id: "1f2a3b",
         text: "What's a family recipe that's been passed down through generations?",
-        tags: ["food", "family", "memories", "nostalgic", "heartwarming"]
+        tags: ["food", "family", "memories", "memories", "heartwarming"]
     },
     {
         id: "4c5d6e",
@@ -74,7 +74,7 @@ const PROMPTS = [
     {
         id: "7f8a9b",
         text: "What food reminds you most of your childhood?",
-        tags: ["food", "memories", "nostalgic", "reflection"]
+        tags: ["food", "memories", "memories", "reflection"]
     },
     {
         id: "0c1d2e",
@@ -94,7 +94,7 @@ const PROMPTS = [
     {
         id: "9f0a1b",
         text: "What's your favorite holiday dessert?",
-        tags: ["food", "preference", "holidays", "family", "cozy"]
+        tags: ["food", "preference", "holidays", "family", "heartwarming"]
     },
     {
         id: "2c3d4f",
@@ -133,7 +133,7 @@ const PROMPTS = [
     {
         id: "0b1c2d",
         text: "What's your favorite family vacation memory?",
-        tags: ["travel", "family", "memories", "nostalgic", "heartwarming"]
+        tags: ["travel", "family", "memories", "memories", "heartwarming"]
     },
     {
         id: "3e4f5a",
@@ -163,7 +163,7 @@ const PROMPTS = [
     {
         id: "8a9b0c",
         text: "What's a place you've visited that exceeded your expectations?",
-        tags: ["travel", "experience", "memories", "thoughtful"]
+        tags: ["travel", "experience", "memories", "deep"]
     },
     {
         id: "1d2e3f",
@@ -178,7 +178,7 @@ const PROMPTS = [
     {
         id: "7d8e9f",
         text: "Where did your family go on vacation when you were a kid?",
-        tags: ["travel", "family", "memories", "nostalgic", "reflection"]
+        tags: ["travel", "family", "memories", "memories", "reflection"]
     },
     {
         id: "0a1b2c",
@@ -192,12 +192,12 @@ const PROMPTS = [
     {
         id: "3d4e5f",
         text: "What career would you be interested in shadowing for a day?",
-        tags: ["career", "hypothetical", "aspiration", "thoughtful"]
+        tags: ["career", "hypothetical", "aspiration", "deep"]
     },
     {
         id: "6a7b8c",
         text: "What did you want to be when you grew up?",
-        tags: ["career", "memories", "nostalgic", "reflection", "all-ages"]
+        tags: ["career", "memories", "memories", "reflection", "all-ages"]
     },
     {
         id: "9d0e1f",
@@ -212,7 +212,7 @@ const PROMPTS = [
     {
         id: "5d6e7f",
         text: "What's a skill you wish you had learned earlier in your career?",
-        tags: ["career", "reflection", "thoughtful", "adults"]
+        tags: ["career", "reflection", "deep", "adults"]
     },
     {
         id: "8a9b0d",
@@ -237,7 +237,7 @@ const PROMPTS = [
     {
         id: "0f1a2b",
         text: "What advice would you give your younger self about work?",
-        tags: ["career", "reflection", "deep", "thoughtful", "adults"]
+        tags: ["career", "reflection", "deep", "deep", "adults"]
     },
 
     // ==========================================
@@ -246,22 +246,22 @@ const PROMPTS = [
     {
         id: "3c4d5e",
         text: "What's your earliest memory?",
-        tags: ["memories", "reflection", "nostalgic", "deep"]
+        tags: ["memories", "reflection", "memories", "deep"]
     },
     {
         id: "6f7a8b",
         text: "What was your favorite toy growing up?",
-        tags: ["memories", "nostalgic", "fun", "all-ages"]
+        tags: ["memories", "memories", "fun", "all-ages"]
     },
     {
         id: "9c0d1e",
         text: "What's a tradition from your childhood that you miss?",
-        tags: ["memories", "family", "nostalgic", "heartwarming"]
+        tags: ["memories", "family", "memories", "heartwarming"]
     },
     {
         id: "2f3a4b",
         text: "What was your favorite subject in school?",
-        tags: ["memories", "school", "preference", "nostalgic", "all-ages"]
+        tags: ["memories", "school", "preference", "memories", "all-ages"]
     },
     {
         id: "5c6d7e",
@@ -271,52 +271,52 @@ const PROMPTS = [
     {
         id: "8f9a0b",
         text: "What was your favorite game to play as a kid?",
-        tags: ["memories", "nostalgic", "fun", "all-ages"]
+        tags: ["memories", "memories", "fun", "all-ages"]
     },
     {
         id: "1c2d3f",
         text: "Who was your childhood best friend?",
-        tags: ["memories", "friends", "nostalgic", "heartwarming"]
+        tags: ["memories", "friends", "memories", "heartwarming"]
     },
     {
         id: "4e5f6a",
         text: "What's a song that instantly takes you back in time?",
-        tags: ["memories", "entertainment", "nostalgic", "fun"]
+        tags: ["memories", "entertainment", "memories", "fun"]
     },
     {
         id: "7b8c9d",
         text: "What was your favorite family tradition growing up?",
-        tags: ["memories", "family", "holidays", "nostalgic", "heartwarming"]
+        tags: ["memories", "family", "holidays", "memories", "heartwarming"]
     },
     {
         id: "0e1f2a",
         text: "What's the most trouble you ever got into as a kid?",
-        tags: ["memories", "silly", "fun", "nostalgic"]
+        tags: ["memories", "silly", "fun", "memories"]
     },
     {
         id: "3b4c5d",
         text: "What was your first car?",
-        tags: ["memories", "experience", "nostalgic", "adults"]
+        tags: ["memories", "experience", "memories", "adults"]
     },
     {
         id: "6e7f8a",
         text: "What fad from your youth do you wish would come back?",
-        tags: ["memories", "nostalgic", "fun", "opinion"]
+        tags: ["memories", "memories", "fun", "opinion"]
     },
     {
         id: "9b0c1d",
         text: "What's a smell that brings back strong memories?",
-        tags: ["memories", "nostalgic", "reflection", "deep"]
+        tags: ["memories", "memories", "reflection", "deep"]
     },
     {
         id: "2e3f4a",
         text: "What did you do during summer vacations as a kid?",
-        tags: ["memories", "nostalgic", "family", "fun"]
+        tags: ["memories", "memories", "family", "fun"]
     },
     {
         id: "5b6c7d",
         text: "What's a story from your grandparents that you love?",
-        tags: ["memories", "family", "nostalgic", "heartwarming"]
+        tags: ["memories", "family", "memories", "heartwarming"]
     },
 
     // ==========================================
@@ -345,7 +345,7 @@ const PROMPTS = [
     {
         id: "0d1e2f",
         text: "What's your favorite way to spend a rainy day?",
-        tags: ["preference", "cozy", "fun", "hobbies"]
+        tags: ["preference", "heartwarming", "fun", "hobbies"]
     },
     {
         id: "3a4b5c",
@@ -355,7 +355,7 @@ const PROMPTS = [
     {
         id: "6d7e8f",
         text: "What's your favorite book you've read this year?",
-        tags: ["preference", "entertainment", "hobbies", "thoughtful"]
+        tags: ["preference", "entertainment", "hobbies", "deep"]
     },
     {
         id: "9a0b1c",
@@ -375,7 +375,7 @@ const PROMPTS = [
     {
         id: "8d9e0f",
         text: "What's your favorite thing about the holiday season?",
-        tags: ["preference", "holidays", "cozy", "family", "heartwarming"]
+        tags: ["preference", "holidays", "heartwarming", "family", "heartwarming"]
     },
     {
         id: "1a2b3c",
@@ -390,12 +390,12 @@ const PROMPTS = [
     {
         id: "7a8b9d",
         text: "What's your favorite room in your house?",
-        tags: ["preference", "home", "cozy", "fun"]
+        tags: ["preference", "home", "heartwarming", "fun"]
     },
     {
         id: "0c1d2f",
         text: "What's your favorite way to relax?",
-        tags: ["preference", "hobbies", "cozy", "fun"]
+        tags: ["preference", "hobbies", "heartwarming", "fun"]
     },
 
     // ==========================================
@@ -508,12 +508,12 @@ const PROMPTS = [
     {
         id: "3d4e5a",
         text: "If you could have dinner with any historical figure, who would it be?",
-        tags: ["hypothetical", "deep", "creative", "thoughtful"]
+        tags: ["hypothetical", "deep", "creative", "deep"]
     },
     {
         id: "6b7c8e",
         text: "If you could relive one day of your life, which would it be?",
-        tags: ["hypothetical", "memories", "deep", "nostalgic"]
+        tags: ["hypothetical", "memories", "deep", "memories"]
     },
     {
         id: "9e0f1b",
@@ -523,7 +523,7 @@ const PROMPTS = [
     {
         id: "2a3b4d",
         text: "If you had to give up one of your five senses, which would it be?",
-        tags: ["hypothetical", "deep", "thoughtful", "creative"]
+        tags: ["hypothetical", "deep", "deep", "creative"]
     },
     {
         id: "5d6e7a",
@@ -533,7 +533,7 @@ const PROMPTS = [
     {
         id: "8b9c0f",
         text: "If you could know the answer to any question, what would you ask?",
-        tags: ["hypothetical", "deep", "thoughtful", "creative"]
+        tags: ["hypothetical", "deep", "deep", "creative"]
     },
     {
         id: "1e2f3c",
@@ -582,7 +582,7 @@ const PROMPTS = [
     {
         id: "5d6e7b",
         text: "Who in our family are you most alike?",
-        tags: ["family", "reflection", "fun", "thoughtful"]
+        tags: ["family", "reflection", "fun", "deep"]
     },
     {
         id: "8a9b0f",
@@ -602,7 +602,7 @@ const PROMPTS = [
     {
         id: "7b8c9e",
         text: "What's your favorite holiday tradition we do as a family?",
-        tags: ["family", "holidays", "preference", "heartwarming", "cozy"]
+        tags: ["family", "holidays", "preference", "heartwarming", "heartwarming"]
     },
     {
         id: "0e1f2b",
@@ -612,7 +612,7 @@ const PROMPTS = [
     {
         id: "3a4b5e",
         text: "How did your parents or grandparents meet?",
-        tags: ["family", "memories", "nostalgic", "heartwarming"]
+        tags: ["family", "memories", "memories", "heartwarming"]
     },
     {
         id: "6d7e8a",
@@ -627,7 +627,7 @@ const PROMPTS = [
     {
         id: "2e3f4b",
         text: "What do you remember about your grandparents' house?",
-        tags: ["family", "memories", "nostalgic", "cozy"]
+        tags: ["family", "memories", "memories", "heartwarming"]
     },
     {
         id: "5a6b7d",
@@ -656,7 +656,7 @@ const PROMPTS = [
     {
         id: "7b8c9f",
         text: "What's the first album you ever bought?",
-        tags: ["entertainment", "memories", "nostalgic", "fun"]
+        tags: ["entertainment", "memories", "memories", "fun"]
     },
     {
         id: "0e1f2c",
@@ -720,7 +720,7 @@ const PROMPTS = [
     {
         id: "3e4f5c",
         text: "What's something you believe that you think few others do?",
-        tags: ["deep", "opinion", "thoughtful", "reflection"]
+        tags: ["deep", "opinion", "deep", "reflection"]
     },
     {
         id: "6a7b8e",
@@ -730,7 +730,7 @@ const PROMPTS = [
     {
         id: "9d0e1b",
         text: "What life lesson did you have to learn the hard way?",
-        tags: ["deep", "reflection", "experience", "thoughtful", "adults"]
+        tags: ["deep", "reflection", "experience", "deep", "adults"]
     },
     {
         id: "2b3c4f",
@@ -740,7 +740,7 @@ const PROMPTS = [
     {
         id: "5e6f7d",
         text: "What do you think is the meaning of life?",
-        tags: ["deep", "reflection", "thoughtful", "opinion"]
+        tags: ["deep", "reflection", "deep", "opinion"]
     },
     {
         id: "8a9b0a",
@@ -750,17 +750,17 @@ const PROMPTS = [
     {
         id: "1c2d3b",
         text: "What do you wish more people understood about you?",
-        tags: ["deep", "reflection", "thoughtful", "heartwarming"]
+        tags: ["deep", "reflection", "deep", "heartwarming"]
     },
     {
         id: "4f5a6d",
         text: "What's a mistake you made that turned out to be a blessing?",
-        tags: ["deep", "reflection", "experience", "thoughtful"]
+        tags: ["deep", "reflection", "experience", "deep"]
     },
     {
         id: "7b8c9a",
         text: "What legacy do you want to leave behind?",
-        tags: ["deep", "aspiration", "reflection", "thoughtful", "adults"]
+        tags: ["deep", "aspiration", "reflection", "deep", "adults"]
     },
     {
         id: "0e1f2d",
@@ -770,17 +770,17 @@ const PROMPTS = [
     {
         id: "3a4b5a",
         text: "What do you think your purpose is?",
-        tags: ["deep", "reflection", "thoughtful", "aspiration"]
+        tags: ["deep", "reflection", "deep", "aspiration"]
     },
     {
         id: "6d7e8c",
         text: "What's a belief you held strongly that you've changed your mind about?",
-        tags: ["deep", "reflection", "thoughtful", "experience", "adults"]
+        tags: ["deep", "reflection", "deep", "experience", "adults"]
     },
     {
         id: "9b0c1f",
         text: "If you could give everyone in the world one piece of advice, what would it be?",
-        tags: ["deep", "opinion", "thoughtful", "reflection"]
+        tags: ["deep", "opinion", "deep", "reflection"]
     },
     {
         id: "2e3f4c",
@@ -799,12 +799,12 @@ const PROMPTS = [
     {
         id: "8d9e0b",
         text: "What's your favorite Christmas movie?",
-        tags: ["holidays", "entertainment", "preference", "cozy", "fun"]
+        tags: ["holidays", "entertainment", "preference", "heartwarming", "fun"]
     },
     {
         id: "1a2b3e",
         text: "What's your favorite holiday song?",
-        tags: ["holidays", "entertainment", "preference", "cozy"]
+        tags: ["holidays", "entertainment", "preference", "heartwarming"]
     },
     {
         id: "4d5e6b",
@@ -819,7 +819,7 @@ const PROMPTS = [
     {
         id: "0d1e2a",
         text: "What's your favorite thing about the holiday season?",
-        tags: ["holidays", "preference", "cozy", "heartwarming"]
+        tags: ["holidays", "preference", "heartwarming", "heartwarming"]
     },
     {
         id: "3b4c5e",
@@ -829,7 +829,7 @@ const PROMPTS = [
     {
         id: "6e7f8b",
         text: "What's your favorite holiday dessert?",
-        tags: ["holidays", "food", "preference", "cozy"]
+        tags: ["holidays", "food", "preference", "heartwarming"]
     },
     {
         id: "9a0b1f",
@@ -844,7 +844,7 @@ const PROMPTS = [
     {
         id: "5b6c7e",
         text: "What's your favorite memory from a past holiday celebration?",
-        tags: ["holidays", "memories", "family", "nostalgic", "heartwarming"]
+        tags: ["holidays", "memories", "family", "memories", "heartwarming"]
     },
     {
         id: "8e9f0b",
@@ -869,7 +869,7 @@ const PROMPTS = [
     {
         id: "0d1e2b",
         text: "What holiday decoration do you love putting up the most?",
-        tags: ["holidays", "preference", "home", "cozy"]
+        tags: ["holidays", "preference", "home", "heartwarming"]
     },
 
     // ==========================================
@@ -893,7 +893,7 @@ const PROMPTS = [
     {
         id: "2e3f4d",
         text: "What's the worst haircut you've ever had?",
-        tags: ["silly", "fun", "memories", "nostalgic"]
+        tags: ["silly", "fun", "memories", "memories"]
     },
     {
         id: "5a6b7f",
@@ -948,7 +948,7 @@ const PROMPTS = [
     {
         id: "5b6c7f",
         text: "What's the worst fashion choice you've ever made?",
-        tags: ["silly", "fun", "memories", "nostalgic"]
+        tags: ["silly", "fun", "memories", "memories"]
     },
 
     // ==========================================
@@ -972,7 +972,7 @@ const PROMPTS = [
     {
         id: "7a8b9b",
         text: "Camping - love it or hate it?",
-        tags: ["nature", "opinion", "outdoors", "adventurous"]
+        tags: ["nature", "opinion", "nature", "adventurous"]
     },
     {
         id: "0d1e2d",
@@ -992,7 +992,7 @@ const PROMPTS = [
     {
         id: "9a0b1b",
         text: "Do you believe in climate change?",
-        tags: ["nature", "opinion", "deep", "thoughtful", "adults"]
+        tags: ["nature", "opinion", "deep", "deep", "adults"]
     },
     {
         id: "2d3e4c",
@@ -1021,7 +1021,7 @@ const PROMPTS = [
     {
         id: "4e5f6e",
         text: "What's your favorite room in your childhood home?",
-        tags: ["home", "memories", "nostalgic", "family"]
+        tags: ["home", "memories", "memories", "family"]
     },
     {
         id: "7a8b9c",
@@ -1056,7 +1056,7 @@ const PROMPTS = [
     {
         id: "5b6c7b",
         text: "What's the oldest thing you own?",
-        tags: ["home", "memories", "nostalgic", "family"]
+        tags: ["home", "memories", "memories", "family"]
     },
 
     // ==========================================
@@ -1080,7 +1080,7 @@ const PROMPTS = [
     {
         id: "7a8b9d",
         text: "Who's someone you lost touch with that you'd like to reconnect with?",
-        tags: ["friends", "reflection", "nostalgic", "deep"]
+        tags: ["friends", "reflection", "memories", "deep"]
     },
     {
         id: "0d1e2f",
@@ -1095,7 +1095,7 @@ const PROMPTS = [
     {
         id: "6e7f8f",
         text: "What makes you a good friend?",
-        tags: ["friends", "reflection", "deep", "thoughtful"]
+        tags: ["friends", "reflection", "deep", "deep"]
     },
     {
         id: "9a0b1d",
@@ -1114,7 +1114,7 @@ const PROMPTS = [
     {
         id: "5b6c7c",
         text: "What's a goal you're currently working toward?",
-        tags: ["aspiration", "reflection", "deep", "thoughtful"]
+        tags: ["aspiration", "reflection", "deep", "deep"]
     },
     {
         id: "8e9f0f",
@@ -1124,7 +1124,7 @@ const PROMPTS = [
     {
         id: "1b2c3c",
         text: "What's something you want to accomplish before the year ends?",
-        tags: ["aspiration", "reflection", "fun", "thoughtful"]
+        tags: ["aspiration", "reflection", "fun", "deep"]
     },
     {
         id: "4e5f6a",
@@ -1139,7 +1139,7 @@ const PROMPTS = [
     {
         id: "0d1e2a",
         text: "What's a dream you've given up on that you'd like to revisit?",
-        tags: ["aspiration", "reflection", "deep", "nostalgic"]
+        tags: ["aspiration", "reflection", "deep", "memories"]
     },
     {
         id: "3b4c5d",
@@ -1178,17 +1178,17 @@ const PROMPTS = [
     {
         id: "1b2c3d",
         text: "Did you have a favorite spot at your school?",
-        tags: ["school", "memories", "nostalgic", "reflection"]
+        tags: ["school", "memories", "memories", "reflection"]
     },
     {
         id: "4e5f6b",
         text: "What was your school mascot?",
-        tags: ["school", "memories", "fun", "nostalgic"]
+        tags: ["school", "memories", "fun", "memories"]
     },
     {
         id: "7a8b9f",
         text: "What clique were you part of in high school?",
-        tags: ["school", "memories", "reflection", "nostalgic", "teens"]
+        tags: ["school", "memories", "reflection", "memories", "teens"]
     },
 
     // ==========================================
@@ -1197,12 +1197,12 @@ const PROMPTS = [
     {
         id: "f0a1b2",
         text: "What three words best describe you?",
-        tags: ["identity", "reflection", "thoughtful", "all-ages"]
+        tags: ["identity", "reflection", "deep", "all-ages"]
     },
     {
         id: "c3d4e5",
         text: "How would you describe yourself to someone who has never met you?",
-        tags: ["identity", "reflection", "thoughtful", "creative"]
+        tags: ["identity", "reflection", "deep", "creative"]
     },
     {
         id: "f6a7b8",
@@ -1217,7 +1217,7 @@ const PROMPTS = [
     {
         id: "f2a3b4",
         text: "What character traits do you admire most in others?",
-        tags: ["identity", "reflection", "deep", "thoughtful"]
+        tags: ["identity", "reflection", "deep", "deep"]
     },
     {
         id: "c5d6e7",
@@ -1232,7 +1232,7 @@ const PROMPTS = [
     {
         id: "c1d2e3",
         text: "What is something strangers often incorrectly assume about you?",
-        tags: ["identity", "reflection", "fun", "thoughtful"]
+        tags: ["identity", "reflection", "fun", "deep"]
     },
 
     // ==========================================
@@ -1256,17 +1256,17 @@ const PROMPTS = [
     {
         id: "c3d4e6",
         text: "Would you rather be the smartest or the kindest person in your class?",
-        tags: ["hypothetical", "deep", "thoughtful", "all-ages"]
+        tags: ["hypothetical", "deep", "deep", "all-ages"]
     },
     {
         id: "f6a7b9",
         text: "Would you rather have total freedom or total safety?",
-        tags: ["hypothetical", "deep", "thoughtful", "adults"]
+        tags: ["hypothetical", "deep", "deep", "adults"]
     },
     {
         id: "c9d0e2",
         text: "Would you rather build a snowman or drink hot chocolate indoors?",
-        tags: ["hypothetical", "holidays", "cozy", "all-ages", "fun"]
+        tags: ["hypothetical", "holidays", "heartwarming", "all-ages", "fun"]
     },
 
     // ==========================================
@@ -1304,17 +1304,17 @@ const PROMPTS = [
     {
         id: "c7d8e0",
         text: "What would you do if you found a wallet full of cash on the street?",
-        tags: ["deep", "thoughtful", "hypothetical", "reflection"]
+        tags: ["deep", "deep", "hypothetical", "reflection"]
     },
     {
         id: "f0a1b4",
         text: "What does it mean to be brave?",
-        tags: ["deep", "thoughtful", "reflection", "all-ages"]
+        tags: ["deep", "deep", "reflection", "all-ages"]
     },
     {
         id: "c3d4e7",
         text: "What do you think is the most important quality of a good person?",
-        tags: ["deep", "thoughtful", "reflection", "opinion"]
+        tags: ["deep", "deep", "reflection", "opinion"]
     },
     {
         id: "f6a7b0",
@@ -1329,7 +1329,7 @@ const PROMPTS = [
     {
         id: "f2a3b6",
         text: "What is one piece of advice you want to pass on to future generations?",
-        tags: ["deep", "reflection", "family", "thoughtful"]
+        tags: ["deep", "reflection", "family", "deep"]
     },
 
     // ==========================================
@@ -1338,17 +1338,17 @@ const PROMPTS = [
     {
         id: "c5d6e9",
         text: "What is a habit you are currently trying to build or break?",
-        tags: ["reflection", "aspiration", "deep", "thoughtful"]
+        tags: ["reflection", "aspiration", "deep", "deep"]
     },
     {
         id: "f8a9b2",
         text: "What helps you fall asleep at night?",
-        tags: ["preference", "cozy", "fun", "reflection"]
+        tags: ["preference", "heartwarming", "fun", "reflection"]
     },
     {
         id: "c1d2e5",
         text: "How do you calm down when you are feeling angry?",
-        tags: ["reflection", "deep", "thoughtful", "all-ages"]
+        tags: ["reflection", "deep", "deep", "all-ages"]
     },
     {
         id: "f4a5b8",
@@ -1358,7 +1358,7 @@ const PROMPTS = [
     {
         id: "c7d8e1",
         text: "What is a bad habit you have that you wish you could break?",
-        tags: ["reflection", "deep", "thoughtful", "fun"]
+        tags: ["reflection", "deep", "deep", "fun"]
     },
 
     // ==========================================
@@ -1382,7 +1382,7 @@ const PROMPTS = [
     {
         id: "c9d0e4",
         text: "If you were the leader of your country, what three laws would you pass?",
-        tags: ["hypothetical", "deep", "creative", "thoughtful"]
+        tags: ["hypothetical", "deep", "creative", "deep"]
     },
     {
         id: "f2a3b7",
@@ -1464,7 +1464,7 @@ const PROMPTS = [
     {
         id: "c1d2e7",
         text: "What was dating like when you were younger?",
-        tags: ["memories", "nostalgic", "reflection", "adults"]
+        tags: ["memories", "memories", "reflection", "adults"]
     },
     {
         id: "f4a5b0",
@@ -1493,7 +1493,7 @@ const PROMPTS = [
     {
         id: "f6a7b3",
         text: "What is your favorite simple pleasure?",
-        tags: ["preference", "cozy", "heartwarming", "fun"]
+        tags: ["preference", "heartwarming", "heartwarming", "fun"]
     },
     {
         id: "c9d0e6",
@@ -1503,12 +1503,12 @@ const PROMPTS = [
     {
         id: "f2a3b9",
         text: "What was the house or neighborhood where you grew up like?",
-        tags: ["memories", "nostalgic", "family", "reflection"]
+        tags: ["memories", "memories", "family", "reflection"]
     },
     {
         id: "c5d6e2",
         text: "What was your favorite childhood toy or game?",
-        tags: ["memories", "nostalgic", "fun", "all-ages"]
+        tags: ["memories", "memories", "fun", "all-ages"]
     },
 
     // ==========================================
@@ -1517,7 +1517,7 @@ const PROMPTS = [
     {
         id: "f8a9b5",
         text: "What Christmas tree ornament do you put up every year that's special to you?",
-        tags: ["holidays", "memories", "family", "cozy"]
+        tags: ["holidays", "memories", "family", "heartwarming"]
     },
     {
         id: "c1d2e8",
@@ -1527,7 +1527,7 @@ const PROMPTS = [
     {
         id: "f4a5b1",
         text: "What is that one holiday tradition you look forward to every year?",
-        tags: ["holidays", "family", "heartwarming", "cozy"]
+        tags: ["holidays", "family", "heartwarming", "heartwarming"]
     },
     {
         id: "c7d8e4",
@@ -1542,7 +1542,7 @@ const PROMPTS = [
     {
         id: "c3d4e1",
         text: "What was Christmas morning like for you when you were little?",
-        tags: ["holidays", "memories", "nostalgic", "family"]
+        tags: ["holidays", "memories", "memories", "family"]
     },
 
     // ==========================================
@@ -1561,7 +1561,7 @@ const PROMPTS = [
     {
         id: "f2a3b0",
         text: "What is your biggest regret?",
-        tags: ["deep", "reflection", "thoughtful", "adults"]
+        tags: ["deep", "reflection", "deep", "adults"]
     },
     {
         id: "c5d6e3",
@@ -1585,17 +1585,17 @@ const PROMPTS = [
     {
         id: "f4a5b2",
         text: "What was the biggest challenge you faced this year, and how did you handle it?",
-        tags: ["reflection", "deep", "aspiration", "thoughtful"]
+        tags: ["reflection", "deep", "aspiration", "deep"]
     },
     {
         id: "c7d8e5",
         text: "What was your 'high moment' and your 'low moment' of this year?",
-        tags: ["reflection", "deep", "family", "thoughtful"]
+        tags: ["reflection", "deep", "family", "deep"]
     },
     {
         id: "f0a1b9",
         text: "What is one thing you learned about yourself this year?",
-        tags: ["reflection", "deep", "aspiration", "thoughtful"]
+        tags: ["reflection", "deep", "aspiration", "deep"]
     },
     {
         id: "c3d4e2",
@@ -1605,7 +1605,7 @@ const PROMPTS = [
     {
         id: "f6a7b5",
         text: "When was the last time you apologized for something?",
-        tags: ["reflection", "deep", "thoughtful", "all-ages"]
+        tags: ["reflection", "deep", "deep", "all-ages"]
     },
 
     // ==========================================
@@ -1619,12 +1619,12 @@ const PROMPTS = [
     {
         id: "e4f5a6",
         text: "Would you rather meet your ancestors or your descendants?",
-        tags: ["hypothetical", "deep", "family", "thoughtful"]
+        tags: ["hypothetical", "deep", "family", "deep"]
     },
     {
         id: "b7c8d9",
         text: "Would you rather have more money or more time?",
-        tags: ["hypothetical", "deep", "thoughtful", "adults"]
+        tags: ["hypothetical", "deep", "deep", "adults"]
     },
     {
         id: "e0f1a2",
@@ -1639,7 +1639,7 @@ const PROMPTS = [
     {
         id: "e6f7a8",
         text: "Would you rather have a rewind button or a pause button for life?",
-        tags: ["hypothetical", "deep", "reflection", "thoughtful"]
+        tags: ["hypothetical", "deep", "reflection", "deep"]
     },
     {
         id: "b9c0d1",
@@ -1664,7 +1664,7 @@ const PROMPTS = [
     {
         id: "b1c2e3",
         text: "Would you rather win an Academy Award or an Olympic Gold?",
-        tags: ["hypothetical", "aspiration", "fun", "thoughtful"]
+        tags: ["hypothetical", "aspiration", "fun", "deep"]
     },
     {
         id: "e4f5b6",
@@ -1684,12 +1684,12 @@ const PROMPTS = [
     {
         id: "b3c4e5",
         text: "Would you rather know how you will die or when you will die?",
-        tags: ["hypothetical", "deep", "thoughtful", "adults"]
+        tags: ["hypothetical", "deep", "deep", "adults"]
     },
     {
         id: "e6f7b8",
         text: "Would you rather lose all money earned this year or all memories?",
-        tags: ["hypothetical", "deep", "thoughtful", "adults"]
+        tags: ["hypothetical", "deep", "deep", "adults"]
     },
     {
         id: "b9c0e1",
@@ -1709,7 +1709,7 @@ const PROMPTS = [
     {
         id: "e8f9b0",
         text: "Would you rather build a snowman or drink hot chocolate indoors?",
-        tags: ["hypothetical", "holidays", "cozy", "all-ages"]
+        tags: ["hypothetical", "holidays", "heartwarming", "all-ages"]
     },
 
     // ==========================================
@@ -1718,37 +1718,37 @@ const PROMPTS = [
     {
         id: "a1b2e3",
         text: "What is your favorite holiday smell?",
-        tags: ["holidays", "preference", "memories", "cozy"]
+        tags: ["holidays", "preference", "memories", "heartwarming"]
     },
     {
         id: "d4e5b6",
         text: "What song brings back childhood memories?",
-        tags: ["memories", "nostalgic", "fun", "all-ages"]
+        tags: ["memories", "memories", "fun", "all-ages"]
     },
     {
         id: "a7b8e9",
         text: "What sound triggers a sense of relief for you?",
-        tags: ["preference", "deep", "cozy", "thoughtful"]
+        tags: ["preference", "deep", "heartwarming", "deep"]
     },
     {
         id: "d0e1b2",
         text: "What texture do you find most comforting?",
-        tags: ["preference", "cozy", "memories", "thoughtful"]
+        tags: ["preference", "heartwarming", "memories", "deep"]
     },
     {
         id: "a3b4e5",
         text: "Describe the taste of your favorite childhood treat.",
-        tags: ["food", "memories", "nostalgic", "fun"]
+        tags: ["food", "memories", "memories", "fun"]
     },
     {
         id: "d6e7b8",
         text: "What scent instantly feels like 'home'?",
-        tags: ["memories", "deep", "nostalgic", "cozy"]
+        tags: ["memories", "deep", "memories", "heartwarming"]
     },
     {
         id: "a9b0e1",
         text: "Describe a specific sound that reminds you of childhood.",
-        tags: ["memories", "nostalgic", "reflection", "thoughtful"]
+        tags: ["memories", "memories", "reflection", "deep"]
     },
     {
         id: "d2e3b4",
@@ -1762,7 +1762,7 @@ const PROMPTS = [
     {
         id: "a5b6e7",
         text: "What was your dream job as a kid?",
-        tags: ["career", "memories", "nostalgic", "fun"]
+        tags: ["career", "memories", "memories", "fun"]
     },
     {
         id: "d8e9b0",
@@ -1772,12 +1772,12 @@ const PROMPTS = [
     {
         id: "a1b2f3",
         text: "What is the best piece of career advice you've received?",
-        tags: ["career", "deep", "thoughtful", "adults"]
+        tags: ["career", "deep", "deep", "adults"]
     },
     {
         id: "d4e5c6",
         text: "If money were no object, what would you do?",
-        tags: ["hypothetical", "aspiration", "deep", "thoughtful"]
+        tags: ["hypothetical", "aspiration", "deep", "deep"]
     },
     {
         id: "a7b8f9",
@@ -1792,7 +1792,7 @@ const PROMPTS = [
     {
         id: "a3b4f5",
         text: "What would you name your autobiography?",
-        tags: ["creative", "fun", "identity", "thoughtful"]
+        tags: ["creative", "fun", "identity", "deep"]
     },
     {
         id: "d6e7c8",
@@ -1826,12 +1826,12 @@ const PROMPTS = [
     {
         id: "a1b2g3",
         text: "What is one thing you're proud of that no one else noticed?",
-        tags: ["reflection", "deep", "identity", "thoughtful"]
+        tags: ["reflection", "deep", "identity", "deep"]
     },
     {
         id: "d4e5d6",
         text: "What message would you send to your future self?",
-        tags: ["aspiration", "deep", "reflection", "thoughtful"]
+        tags: ["aspiration", "deep", "reflection", "deep"]
     },
     {
         id: "a7b8g9",
@@ -1841,22 +1841,22 @@ const PROMPTS = [
     {
         id: "d0e1d2",
         text: "What is a big world problem you would like to change?",
-        tags: ["aspiration", "deep", "thoughtful", "all-ages"]
+        tags: ["aspiration", "deep", "deep", "all-ages"]
     },
     {
         id: "a3b4g5",
         text: "What makes you feel most appreciated and understood?",
-        tags: ["deep", "reflection", "heartwarming", "thoughtful"]
+        tags: ["deep", "reflection", "heartwarming", "deep"]
     },
     {
         id: "d6e7d8",
         text: "What makes a good friend?",
-        tags: ["deep", "reflection", "friends", "thoughtful"]
+        tags: ["deep", "reflection", "friends", "deep"]
     },
     {
         id: "a9b0g1",
         text: "What is the bravest thing you've ever done?",
-        tags: ["experience", "deep", "reflection", "thoughtful"]
+        tags: ["experience", "deep", "reflection", "deep"]
     },
     {
         id: "d2e3d4",
@@ -1866,17 +1866,17 @@ const PROMPTS = [
     {
         id: "a5b6g7",
         text: "What makes you unique?",
-        tags: ["identity", "reflection", "deep", "thoughtful"]
+        tags: ["identity", "reflection", "deep", "deep"]
     },
     {
         id: "d8e9d0",
         text: "Whose opinion do you care most about?",
-        tags: ["deep", "reflection", "thoughtful", "identity"]
+        tags: ["deep", "reflection", "deep", "identity"]
     },
     {
         id: "a1b2h3",
         text: "What do you wish more people understood about you?",
-        tags: ["deep", "reflection", "identity", "thoughtful"]
+        tags: ["deep", "reflection", "identity", "deep"]
     },
     {
         id: "d4e5e6",
@@ -1891,12 +1891,12 @@ const PROMPTS = [
     {
         id: "d0e1e2",
         text: "What is the best and worst advice you've ever received?",
-        tags: ["reflection", "deep", "thoughtful", "fun"]
+        tags: ["reflection", "deep", "deep", "fun"]
     },
     {
         id: "a3b4h5",
         text: "What is your definition of success?",
-        tags: ["deep", "aspiration", "thoughtful", "reflection"]
+        tags: ["deep", "aspiration", "deep", "reflection"]
     },
     {
         id: "d6e7e8",
@@ -1906,22 +1906,22 @@ const PROMPTS = [
     {
         id: "a9b0h1",
         text: "In your own words, what does love mean?",
-        tags: ["deep", "reflection", "heartwarming", "thoughtful"]
+        tags: ["deep", "reflection", "heartwarming", "deep"]
     },
     {
         id: "d2e3e4",
         text: "What helps you breathe easy?",
-        tags: ["reflection", "cozy", "deep", "thoughtful"]
+        tags: ["reflection", "heartwarming", "deep", "deep"]
     },
     {
         id: "a5b6h7",
         text: "What would you like to be remembered for?",
-        tags: ["deep", "reflection", "aspiration", "thoughtful"]
+        tags: ["deep", "reflection", "aspiration", "deep"]
     },
     {
         id: "d8e9e0",
         text: "If you could ask God or the Universe one question, what would it be?",
-        tags: ["deep", "hypothetical", "thoughtful", "reflection"]
+        tags: ["deep", "hypothetical", "deep", "reflection"]
     },
 
     // ==========================================
@@ -1955,12 +1955,12 @@ const PROMPTS = [
     {
         id: "d6e7f8",
         text: "What helps you fall asleep at night?",
-        tags: ["preference", "cozy", "fun", "all-ages"]
+        tags: ["preference", "heartwarming", "fun", "all-ages"]
     },
     {
         id: "a9b0i1",
         text: "How do you calm down when you are feeling angry?",
-        tags: ["reflection", "deep", "identity", "thoughtful"]
+        tags: ["reflection", "deep", "identity", "deep"]
     },
     {
         id: "d2e3f4",
@@ -1990,12 +1990,12 @@ const PROMPTS = [
     {
         id: "a7b8j9",
         text: "What is a habit you are currently trying to build or break?",
-        tags: ["aspiration", "reflection", "deep", "thoughtful"]
+        tags: ["aspiration", "reflection", "deep", "deep"]
     },
     {
         id: "d0e1g2",
         text: "If you could be any age for a week, what age would you be?",
-        tags: ["hypothetical", "reflection", "fun", "thoughtful"]
+        tags: ["hypothetical", "reflection", "fun", "deep"]
     },
     {
         id: "a3b4j5",
@@ -2005,7 +2005,7 @@ const PROMPTS = [
     {
         id: "d6e7g8",
         text: "What is the most beautiful place you have ever seen?",
-        tags: ["experience", "travel", "memories", "thoughtful"]
+        tags: ["experience", "travel", "memories", "deep"]
     },
 
     // ==========================================
@@ -2019,27 +2019,27 @@ const PROMPTS = [
     {
         id: "d2e3g4",
         text: "What is your #1 goal for next year?",
-        tags: ["aspiration", "reflection", "thoughtful", "all-ages"]
+        tags: ["aspiration", "reflection", "deep", "all-ages"]
     },
     {
         id: "a5b6j7",
         text: "What are three words to describe this past year?",
-        tags: ["reflection", "deep", "thoughtful", "all-ages"]
+        tags: ["reflection", "deep", "deep", "all-ages"]
     },
     {
         id: "d8e9g0",
         text: "What is a new skill you want to learn next year?",
-        tags: ["aspiration", "creative", "thoughtful", "all-ages"]
+        tags: ["aspiration", "creative", "deep", "all-ages"]
     },
     {
         id: "a1b2k3",
         text: "What was the best piece of advice you got this year?",
-        tags: ["reflection", "deep", "thoughtful", "fun"]
+        tags: ["reflection", "deep", "deep", "fun"]
     },
     {
         id: "d4e5h6",
         text: "What is one thing you want to do differently next year?",
-        tags: ["aspiration", "reflection", "thoughtful", "all-ages"]
+        tags: ["aspiration", "reflection", "deep", "all-ages"]
     },
     {
         id: "a7b8k9",
@@ -2049,12 +2049,12 @@ const PROMPTS = [
     {
         id: "d0e1h2",
         text: "What is your 'Word of the Year' for next year?",
-        tags: ["aspiration", "reflection", "creative", "thoughtful"]
+        tags: ["aspiration", "reflection", "creative", "deep"]
     },
     {
         id: "a3b4k5",
         text: "What skill did you learn this year that surprised you?",
-        tags: ["reflection", "experience", "aspiration", "thoughtful"]
+        tags: ["reflection", "experience", "aspiration", "deep"]
     },
     {
         id: "d6e7h8",
@@ -2064,7 +2064,7 @@ const PROMPTS = [
     {
         id: "a9b0k1",
         text: "What is one habit or routine you'd like to start?",
-        tags: ["aspiration", "reflection", "thoughtful", "all-ages"]
+        tags: ["aspiration", "reflection", "deep", "all-ages"]
     },
     {
         id: "d2e3h4",
@@ -2203,7 +2203,7 @@ const PROMPTS = [
     {
         id: "d0e1k2",
         text: "What is your holiday guilty pleasure?",
-        tags: ["holidays", "preference", "fun", "cozy"]
+        tags: ["holidays", "preference", "fun", "heartwarming"]
     },
     {
         id: "a3b4n5",
@@ -2213,7 +2213,7 @@ const PROMPTS = [
     {
         id: "d6e7k8",
         text: "How old were you when you stopped believing in Santa?",
-        tags: ["holidays", "memories", "nostalgic", "family"]
+        tags: ["holidays", "memories", "memories", "family"]
     },
     {
         id: "a9b0n1",
@@ -2223,7 +2223,7 @@ const PROMPTS = [
     {
         id: "d2e3k4",
         text: "Describe your ideal Christmas in three words.",
-        tags: ["holidays", "reflection", "creative", "cozy"]
+        tags: ["holidays", "reflection", "creative", "heartwarming"]
     },
     {
         id: "a5b6n7",
@@ -2312,7 +2312,7 @@ const PROMPTS = [
     {
         id: "a3b4p5",
         text: "If you were the leader of your country, what three laws would you pass?",
-        tags: ["hypothetical", "deep", "creative", "thoughtful"]
+        tags: ["hypothetical", "deep", "creative", "deep"]
     },
     {
         id: "d6e7m8",
@@ -2327,7 +2327,7 @@ const PROMPTS = [
     {
         id: "d2e3m4",
         text: "If you could instantly master any skill, what would it be?",
-        tags: ["hypothetical", "aspiration", "creative", "thoughtful"]
+        tags: ["hypothetical", "aspiration", "creative", "deep"]
     },
     {
         id: "a5b6p7",
@@ -2341,17 +2341,17 @@ const PROMPTS = [
     {
         id: "d8e9m0",
         text: "What would you do if you found a wallet full of cash on the street?",
-        tags: ["deep", "hypothetical", "thoughtful", "reflection"]
+        tags: ["deep", "hypothetical", "deep", "reflection"]
     },
     {
         id: "a1b2q3",
         text: "What does it mean to be brave?",
-        tags: ["deep", "reflection", "thoughtful", "all-ages"]
+        tags: ["deep", "reflection", "deep", "all-ages"]
     },
     {
         id: "d4e5n6",
         text: "Do you think it's possible to change the world?",
-        tags: ["deep", "reflection", "aspiration", "thoughtful"]
+        tags: ["deep", "reflection", "aspiration", "deep"]
     },
     {
         id: "a7b8q9",
@@ -2361,12 +2361,12 @@ const PROMPTS = [
     {
         id: "d0e1n2",
         text: "What do you think is the most important quality of a good person?",
-        tags: ["deep", "reflection", "thoughtful", "all-ages"]
+        tags: ["deep", "reflection", "deep", "all-ages"]
     },
     {
         id: "a3b4q5",
         text: "What is one piece of advice you want to pass on to future generations?",
-        tags: ["deep", "reflection", "family", "thoughtful"]
+        tags: ["deep", "reflection", "family", "deep"]
     },
     {
         id: "d6e7n8",
@@ -2376,7 +2376,7 @@ const PROMPTS = [
     {
         id: "a9b0q1",
         text: "What do you think the meaning of life is?",
-        tags: ["deep", "reflection", "thoughtful", "adults"]
+        tags: ["deep", "reflection", "deep", "adults"]
     },
 
     // ==========================================
@@ -2405,7 +2405,7 @@ const PROMPTS = [
     {
         id: "d4e5o6",
         text: "What school subject do you think helps you the most in everyday life?",
-        tags: ["school", "reflection", "thoughtful", "all-ages"]
+        tags: ["school", "reflection", "deep", "all-ages"]
     },
     {
         id: "a7b8r9",
@@ -2468,17 +2468,17 @@ const PROMPTS = [
     {
         id: "a7b8s9",
         text: "Have you ever hidden a secret from your best friend?",
-        tags: ["deep", "reflection", "friends", "thoughtful"]
+        tags: ["deep", "reflection", "friends", "deep"]
     },
     {
         id: "d0e1p2",
         text: "What is a bad habit you have that you wish you could break?",
-        tags: ["reflection", "aspiration", "thoughtful", "identity"]
+        tags: ["reflection", "aspiration", "deep", "identity"]
     },
     {
         id: "a3b4s5",
         text: "Have you ever blamed something you did on someone else?",
-        tags: ["reflection", "deep", "thoughtful", "fun"]
+        tags: ["reflection", "deep", "deep", "fun"]
     },
     {
         id: "d6e7p8",
@@ -2488,7 +2488,7 @@ const PROMPTS = [
     {
         id: "a9b0s1",
         text: "Have you ever felt misunderstood by the grown-ups in your life?",
-        tags: ["reflection", "deep", "teens", "thoughtful"]
+        tags: ["reflection", "deep", "teens", "deep"]
     },
     {
         id: "d2e3p4",
@@ -2517,17 +2517,17 @@ const PROMPTS = [
     {
         id: "d4e5q6",
         text: "Who was your best friend growing up, and are you still in touch?",
-        tags: ["memories", "friends", "reflection", "nostalgic"]
+        tags: ["memories", "friends", "reflection", "memories"]
     },
     {
         id: "a7b8t9",
         text: "What historical event happened in your lifetime that you remember most?",
-        tags: ["memories", "deep", "reflection", "thoughtful"]
+        tags: ["memories", "deep", "reflection", "deep"]
     },
     {
         id: "d0e1q2",
         text: "What was the first album, tape, or CD you ever bought?",
-        tags: ["memories", "entertainment", "nostalgic", "fun"]
+        tags: ["memories", "entertainment", "memories", "fun"]
     },
     {
         id: "a3b4t5",
@@ -2542,7 +2542,7 @@ const PROMPTS = [
     {
         id: "a9b0t1",
         text: "What is a life lesson you wish you had learned sooner?",
-        tags: ["reflection", "deep", "thoughtful", "adults"]
+        tags: ["reflection", "deep", "deep", "adults"]
     },
     {
         id: "d2e3q4",
@@ -2557,7 +2557,7 @@ const PROMPTS = [
     {
         id: "d8e9q0",
         text: "What is a song that instantly takes you back to a specific moment?",
-        tags: ["memories", "entertainment", "nostalgic", "reflection"]
+        tags: ["memories", "entertainment", "memories", "reflection"]
     },
     {
         id: "a1b2u3",
@@ -2581,12 +2581,12 @@ const PROMPTS = [
     {
         id: "de01a2",
         text: "Can AI truly reduce loneliness, or does it merely mask it?",
-        tags: ["digitalethics", "deep", "thoughtful", "adults"]
+        tags: ["digitalethics", "deep", "deep", "adults"]
     },
     {
         id: "de03b4",
         text: "Should platforms be required to fact-check content?",
-        tags: ["digitalethics", "opinion", "thoughtful", "adults"]
+        tags: ["digitalethics", "opinion", "deep", "adults"]
     },
     {
         id: "de05c6",
@@ -2606,7 +2606,7 @@ const PROMPTS = [
     {
         id: "de11f2",
         text: "Do social movements need to go viral to have impact?",
-        tags: ["digitalethics", "opinion", "thoughtful", "adults"]
+        tags: ["digitalethics", "opinion", "deep", "adults"]
     },
     {
         id: "de13g4",
@@ -2616,7 +2616,7 @@ const PROMPTS = [
     {
         id: "de15h6",
         text: "Should AI be banned in competitive debate or art?",
-        tags: ["digitalethics", "opinion", "creative", "thoughtful"]
+        tags: ["digitalethics", "opinion", "creative", "deep"]
     },
 
     // ==========================================
@@ -2630,27 +2630,27 @@ const PROMPTS = [
     {
         id: "gc03b4",
         text: "What is a common proverb or saying you find yourself using?",
-        tags: ["globalcitizen", "reflection", "family", "thoughtful"]
+        tags: ["globalcitizen", "reflection", "family", "deep"]
     },
     {
         id: "gc05c6",
         text: "Is empathy a universal language across borders?",
-        tags: ["globalcitizen", "deep", "values", "thoughtful"]
+        tags: ["globalcitizen", "deep", "values", "deep"]
     },
     {
         id: "gc07d8",
         text: "How can people work together on global challenges?",
-        tags: ["globalcitizen", "aspiration", "values", "thoughtful"]
+        tags: ["globalcitizen", "aspiration", "values", "deep"]
     },
     {
         id: "gc09e0",
         text: "What does 'home' mean to you in a global context?",
-        tags: ["globalcitizen", "deep", "reflection", "thoughtful"]
+        tags: ["globalcitizen", "deep", "reflection", "deep"]
     },
     {
         id: "gc11f2",
         text: "What does it mean to be a 'world neighbor'?",
-        tags: ["globalcitizen", "values", "deep", "thoughtful"]
+        tags: ["globalcitizen", "values", "deep", "deep"]
     },
     {
         id: "gc13g4",
@@ -2669,7 +2669,7 @@ const PROMPTS = [
     {
         id: "st03b4",
         text: "Name three sounds of nature and how they make you feel.",
-        tags: ["stewardship", "reflection", "nature", "thoughtful"]
+        tags: ["stewardship", "reflection", "nature", "deep"]
     },
     {
         id: "st05c6",
@@ -2679,7 +2679,7 @@ const PROMPTS = [
     {
         id: "st07d8",
         text: "Have you noticed changes in the weather where you live?",
-        tags: ["stewardship", "reflection", "nature", "thoughtful"]
+        tags: ["stewardship", "reflection", "nature", "deep"]
     },
     {
         id: "st09e0",
@@ -2694,12 +2694,12 @@ const PROMPTS = [
     {
         id: "st13g4",
         text: "Should companies be held responsible for pollution?",
-        tags: ["stewardship", "opinion", "values", "thoughtful"]
+        tags: ["stewardship", "opinion", "values", "deep"]
     },
     {
         id: "st15h6",
         text: "Do humans have a responsibility to protect other species?",
-        tags: ["stewardship", "values", "deep", "thoughtful"]
+        tags: ["stewardship", "values", "deep", "deep"]
     },
     {
         id: "st17i8",
@@ -2718,12 +2718,12 @@ const PROMPTS = [
     {
         id: "ei01a2",
         text: "What emotions did you feel most strongly today?",
-        tags: ["selfawareness", "reflection", "deep", "all-ages"]
+        tags: ["reflection", "reflection", "deep", "all-ages"]
     },
     {
         id: "ei03b4",
         text: "How do you usually respond to difficult emotions?",
-        tags: ["selfawareness", "reflection", "deep", "thoughtful"]
+        tags: ["reflection", "reflection", "deep", "deep"]
     },
     {
         id: "ei05c6",
@@ -2733,22 +2733,22 @@ const PROMPTS = [
     {
         id: "ei07d8",
         text: "How did you show empathy toward others today?",
-        tags: ["selfawareness", "reflection", "values", "heartwarming"]
+        tags: ["reflection", "reflection", "values", "heartwarming"]
     },
     {
         id: "ei09e0",
         text: "Did you communicate your needs effectively today?",
-        tags: ["selfawareness", "reflection", "deep", "adults"]
+        tags: ["reflection", "reflection", "deep", "adults"]
     },
     {
         id: "ei11f2",
         text: "If your current emotions were weather, what's the forecast?",
-        tags: ["selfawareness", "creative", "fun", "all-ages"]
+        tags: ["reflection", "creative", "fun", "all-ages"]
     },
     {
         id: "ei13g4",
         text: "What topic or cause ignites a fire in you?",
-        tags: ["values", "aspiration", "deep", "thoughtful"]
+        tags: ["values", "aspiration", "deep", "deep"]
     },
     {
         id: "ei15h6",
@@ -2758,12 +2758,12 @@ const PROMPTS = [
     {
         id: "ei17i8",
         text: "When have you felt misunderstood by someone?",
-        tags: ["vulnerability", "reflection", "deep", "thoughtful"]
+        tags: ["vulnerability", "reflection", "deep", "deep"]
     },
     {
         id: "ei19j0",
         text: "What's one small action you can take to care for yourself?",
-        tags: ["selfawareness", "reflection", "aspiration", "cozy"]
+        tags: ["reflection", "reflection", "aspiration", "heartwarming"]
     },
 
     // ==========================================
@@ -2792,12 +2792,12 @@ const PROMPTS = [
     {
         id: "bs09e0",
         text: "What new understanding are you taking from this conversation?",
-        tags: ["bravespace", "reflection", "deep", "thoughtful"]
+        tags: ["bravespace", "reflection", "deep", "deep"]
     },
     {
         id: "bs11f2",
         text: "What happens when someone is excluded from society?",
-        tags: ["bravespace", "deep", "values", "thoughtful"]
+        tags: ["bravespace", "deep", "values", "deep"]
     },
     {
         id: "bs13g4",
@@ -2812,7 +2812,7 @@ const PROMPTS = [
     {
         id: "bs17i8",
         text: "Who is missing from this conversation?",
-        tags: ["bravespace", "deep", "values", "thoughtful"]
+        tags: ["bravespace", "deep", "values", "deep"]
     },
     {
         id: "bs19j0",
@@ -2831,7 +2831,7 @@ const PROMPTS = [
     {
         id: "vu03b4",
         text: "What choice had the greatest impact on your life?",
-        tags: ["values", "deep", "reflection", "thoughtful"]
+        tags: ["values", "deep", "reflection", "deep"]
     },
     {
         id: "vu05c6",
@@ -2851,12 +2851,12 @@ const PROMPTS = [
     {
         id: "vu11f2",
         text: "What is one thing you wish people understood better about you?",
-        tags: ["vulnerability", "deep", "reflection", "thoughtful"]
+        tags: ["vulnerability", "deep", "reflection", "deep"]
     },
     {
         id: "vu13g4",
         text: "What does forgiveness mean to you?",
-        tags: ["values", "deep", "reflection", "thoughtful"]
+        tags: ["values", "deep", "reflection", "deep"]
     },
     {
         id: "vu15h6",
@@ -2876,7 +2876,7 @@ const PROMPTS = [
     {
         id: "vu21k2",
         text: "In what scenario is it okay to lie?",
-        tags: ["values", "deep", "opinion", "thoughtful"]
+        tags: ["values", "deep", "opinion", "deep"]
     },
     {
         id: "vu23l4",
@@ -2895,7 +2895,7 @@ const PROMPTS = [
     {
         id: "lg03b4",
         text: "If you could ask God or the Universe one question, what would it be?",
-        tags: ["legacy", "deep", "values", "thoughtful"]
+        tags: ["legacy", "deep", "values", "deep"]
     },
     {
         id: "lg05c6",
@@ -2905,12 +2905,12 @@ const PROMPTS = [
     {
         id: "lg07d8",
         text: "What is one piece of wisdom you'd leave behind?",
-        tags: ["legacy", "deep", "values", "thoughtful"]
+        tags: ["legacy", "deep", "values", "deep"]
     },
     {
         id: "lg09e0",
         text: "What is the single most important thing you've learned in life?",
-        tags: ["legacy", "deep", "reflection", "thoughtful"]
+        tags: ["legacy", "deep", "reflection", "deep"]
     },
 
     // ==========================================
@@ -3012,7 +3012,7 @@ const PROMPTS = [
     {
         id: "cr11f2",
         text: "What if you discovered the world was a simulation?",
-        tags: ["creative", "hypothetical", "deep", "thoughtful"]
+        tags: ["creative", "hypothetical", "deep", "deep"]
     },
     {
         id: "cr13g4",
@@ -3080,27 +3080,27 @@ const PROMPTS = [
     {
         id: "sn01a2",
         text: "What sound triggers a sense of relief for you?",
-        tags: ["preference", "reflection", "cozy", "thoughtful"]
+        tags: ["preference", "reflection", "heartwarming", "deep"]
     },
     {
         id: "sn03b4",
         text: "What texture do you find most comforting?",
-        tags: ["preference", "reflection", "cozy", "nostalgic"]
+        tags: ["preference", "reflection", "heartwarming", "memories"]
     },
     {
         id: "sn05c6",
         text: "Describe the taste of your favorite childhood treat.",
-        tags: ["memories", "nostalgic", "food", "reflection"]
+        tags: ["memories", "memories", "food", "reflection"]
     },
     {
         id: "sn07d8",
         text: "What scent instantly feels like 'home' to you?",
-        tags: ["memories", "nostalgic", "home", "reflection"]
+        tags: ["memories", "memories", "home", "reflection"]
     },
     {
         id: "sn09e0",
         text: "Describe a specific sound that reminds you of childhood.",
-        tags: ["memories", "nostalgic", "reflection", "deep"]
+        tags: ["memories", "memories", "reflection", "deep"]
     },
 
     // ==========================================
@@ -3114,7 +3114,7 @@ const PROMPTS = [
     {
         id: "id03b4",
         text: "What is something strangers often incorrectly assume about you?",
-        tags: ["identity", "reflection", "deep", "thoughtful"]
+        tags: ["identity", "reflection", "deep", "deep"]
     },
     {
         id: "id05c6",
@@ -3124,7 +3124,7 @@ const PROMPTS = [
     {
         id: "id07d8",
         text: "What helps you feel most like yourself?",
-        tags: ["identity", "reflection", "deep", "cozy"]
+        tags: ["identity", "reflection", "deep", "heartwarming"]
     },
     {
         id: "id09e0",
@@ -3198,7 +3198,7 @@ const PROMPTS = [
     {
         id: "hd25m6",
         text: "If you were stuck in a snow globe, what scene would be in it?",
-        tags: ["holidays", "creative", "fun", "cozy"]
+        tags: ["holidays", "creative", "fun", "heartwarming"]
     },
     {
         id: "hd27n8",
@@ -3282,7 +3282,7 @@ const PROMPTS = [
     {
         id: "wyr015",
         text: "Would you rather have no sense of taste or no sense of smell?",
-        tags: ["hypothetical", "preference", "deep", "thoughtful"]
+        tags: ["hypothetical", "preference", "deep", "deep"]
     },
     {
         id: "wyr016",
@@ -3505,7 +3505,7 @@ const PROMPTS = [
     {
         id: "wyr058",
         text: "Would you rather never use planes again or never use cars again?",
-        tags: ["hypothetical", "travel", "preference", "thoughtful"]
+        tags: ["hypothetical", "travel", "preference", "deep"]
     },
     {
         id: "wyr059",
@@ -3539,7 +3539,7 @@ const PROMPTS = [
     {
         id: "wyr064",
         text: "Would you rather have a photographic memory or the ability to forget anything at will?",
-        tags: ["hypothetical", "creative", "deep", "thoughtful"]
+        tags: ["hypothetical", "creative", "deep", "deep"]
     },
     {
         id: "wyr065",
@@ -3579,12 +3579,12 @@ const PROMPTS = [
     {
         id: "wyr072",
         text: "Would you rather have super luck or super intelligence?",
-        tags: ["hypothetical", "creative", "preference", "thoughtful"]
+        tags: ["hypothetical", "creative", "preference", "deep"]
     },
     {
         id: "wyr073",
         text: "Would you rather always know the truth or always be believed?",
-        tags: ["hypothetical", "deep", "values", "thoughtful"]
+        tags: ["hypothetical", "deep", "values", "deep"]
     },
     {
         id: "wyr074",
@@ -3594,7 +3594,7 @@ const PROMPTS = [
     {
         id: "wyr075",
         text: "Would you rather be a master of every skill or a master of one?",
-        tags: ["hypothetical", "deep", "preference", "thoughtful"]
+        tags: ["hypothetical", "deep", "preference", "deep"]
     },
     {
         id: "wyr076",
@@ -3614,7 +3614,7 @@ const PROMPTS = [
     {
         id: "wyr079",
         text: "Would you rather be able to pause your emotions or amplify the positive ones?",
-        tags: ["hypothetical", "deep", "selfawareness", "thoughtful"]
+        tags: ["hypothetical", "deep", "reflection", "deep"]
     },
 
     // ==========================================
@@ -3772,7 +3772,7 @@ const PROMPTS = [
     {
         id: "wyr109",
         text: "Would you rather be extremely productive or extremely creative?",
-        tags: ["hypothetical", "career", "preference", "thoughtful"]
+        tags: ["hypothetical", "career", "preference", "deep"]
     },
     {
         id: "wyr110",
@@ -3792,7 +3792,7 @@ const PROMPTS = [
     {
         id: "wyr113",
         text: "Would you rather be known as the best leader or the best teammate?",
-        tags: ["hypothetical", "career", "values", "thoughtful"]
+        tags: ["hypothetical", "career", "values", "deep"]
     },
     {
         id: "wyr114",
@@ -3802,12 +3802,12 @@ const PROMPTS = [
     {
         id: "wyr115",
         text: "Would you rather have perfect financial knowledge or perfect emotional intelligence?",
-        tags: ["hypothetical", "deep", "values", "thoughtful"]
+        tags: ["hypothetical", "deep", "values", "deep"]
     },
     {
         id: "wyr116",
         text: "Would you rather win a big award or invent something useful?",
-        tags: ["hypothetical", "aspiration", "values", "thoughtful"]
+        tags: ["hypothetical", "aspiration", "values", "deep"]
     },
     {
         id: "wyr117",
@@ -3822,7 +3822,7 @@ const PROMPTS = [
     {
         id: "wyr119",
         text: "Would you rather be a great mentor or have a great mentor?",
-        tags: ["hypothetical", "career", "values", "thoughtful"]
+        tags: ["hypothetical", "career", "values", "deep"]
     },
 
     // ==========================================
@@ -3886,7 +3886,7 @@ const PROMPTS = [
     {
         id: "wyr131",
         text: "Would you rather be too honest or too polite?",
-        tags: ["hypothetical", "values", "deep", "thoughtful"]
+        tags: ["hypothetical", "values", "deep", "deep"]
     },
     {
         id: "wyr132",
@@ -3901,7 +3901,7 @@ const PROMPTS = [
     {
         id: "wyr134",
         text: "Would you rather everyone trust you or everyone admire you?",
-        tags: ["hypothetical", "values", "deep", "thoughtful"]
+        tags: ["hypothetical", "values", "deep", "deep"]
     },
     {
         id: "wyr135",
@@ -3916,7 +3916,7 @@ const PROMPTS = [
     {
         id: "wyr137",
         text: "Would you rather give great advice or always follow great advice?",
-        tags: ["hypothetical", "values", "deep", "thoughtful"]
+        tags: ["hypothetical", "values", "deep", "deep"]
     },
     {
         id: "wyr138",
@@ -3935,12 +3935,12 @@ const PROMPTS = [
     {
         id: "wyr140",
         text: "Would you rather see your future or change one decision from your past?",
-        tags: ["hypothetical", "deep", "reflection", "thoughtful"]
+        tags: ["hypothetical", "deep", "reflection", "deep"]
     },
     {
         id: "wyr141",
         text: "Would you rather be misunderstood or ignored?",
-        tags: ["hypothetical", "deep", "reflection", "thoughtful"]
+        tags: ["hypothetical", "deep", "reflection", "deep"]
     },
     {
         id: "wyr142",
@@ -3960,17 +3960,17 @@ const PROMPTS = [
     {
         id: "wyr145",
         text: "Would you rather feel every emotion deeply or feel only the positive ones lightly?",
-        tags: ["hypothetical", "deep", "selfawareness", "thoughtful"]
+        tags: ["hypothetical", "deep", "reflection", "deep"]
     },
     {
         id: "wyr146",
         text: "Would you rather explore outer space or explore your own subconscious?",
-        tags: ["hypothetical", "deep", "creative", "thoughtful"]
+        tags: ["hypothetical", "deep", "creative", "deep"]
     },
     {
         id: "wyr147",
         text: "Would you rather understand the meaning of life or understand how the universe began?",
-        tags: ["hypothetical", "deep", "thoughtful", "values"]
+        tags: ["hypothetical", "deep", "deep", "values"]
     },
     {
         id: "wyr148",
@@ -4000,7 +4000,7 @@ const PROMPTS = [
     {
         id: "wyr153",
         text: "Would you rather have a brilliant idea once or decent ideas forever?",
-        tags: ["hypothetical", "creative", "preference", "thoughtful"]
+        tags: ["hypothetical", "creative", "preference", "deep"]
     },
     {
         id: "wyr154",
@@ -4010,7 +4010,7 @@ const PROMPTS = [
     {
         id: "wyr155",
         text: "Would you rather know every truth or maintain some comforting illusions?",
-        tags: ["hypothetical", "deep", "values", "thoughtful"]
+        tags: ["hypothetical", "deep", "values", "deep"]
     },
     {
         id: "wyr156",
@@ -4272,7 +4272,7 @@ const PROMPTS = [
     {
         id: "wyr205",
         text: "Would you rather cuddle a panda or cuddle a koala?",
-        tags: ["hypothetical", "nature", "preference", "cozy"]
+        tags: ["hypothetical", "nature", "preference", "heartwarming"]
     },
     {
         id: "wyr206",
@@ -4337,7 +4337,7 @@ const PROMPTS = [
     {
         id: "wyr218",
         text: "Would you rather have bees make honey just for you or birds sing when you enter a room?",
-        tags: ["hypothetical", "nature", "creative", "cozy"]
+        tags: ["hypothetical", "nature", "creative", "heartwarming"]
     },
     {
         id: "wyr219",
@@ -4351,62 +4351,62 @@ const PROMPTS = [
     {
         id: "wyr220",
         text: "Would you rather solve a mystery or solve a puzzle?",
-        tags: ["hypothetical", "preference", "fun", "thoughtful"]
+        tags: ["hypothetical", "preference", "fun", "deep"]
     },
     {
         id: "wyr221",
         text: "Would you rather have an answer to every question or be able to ask perfect questions?",
-        tags: ["hypothetical", "deep", "thoughtful", "creative"]
+        tags: ["hypothetical", "deep", "deep", "creative"]
     },
     {
         id: "wyr222",
         text: "Would you rather be unbeatable at chess or unbeatable at strategy games?",
-        tags: ["hypothetical", "preference", "fun", "thoughtful"]
+        tags: ["hypothetical", "preference", "fun", "deep"]
     },
     {
         id: "wyr223",
         text: "Would you rather always win arguments or never get into arguments at all?",
-        tags: ["hypothetical", "preference", "values", "thoughtful"]
+        tags: ["hypothetical", "preference", "values", "deep"]
     },
     {
         id: "wyr224",
         text: "Would you rather have to make decisions instantly or take hours to decide everything?",
-        tags: ["hypothetical", "preference", "fun", "thoughtful"]
+        tags: ["hypothetical", "preference", "fun", "deep"]
     },
     {
         id: "wyr225",
         text: "Would you rather know all trivia or know all practical skills?",
-        tags: ["hypothetical", "preference", "fun", "thoughtful"]
+        tags: ["hypothetical", "preference", "fun", "deep"]
     },
     {
         id: "wyr226",
         text: "Would you rather solve a crime or prevent one?",
-        tags: ["hypothetical", "values", "deep", "thoughtful"]
+        tags: ["hypothetical", "values", "deep", "deep"]
     },
     {
         id: "wyr227",
         text: "Would you rather understand every math concept or every language concept?",
-        tags: ["hypothetical", "school", "preference", "thoughtful"]
+        tags: ["hypothetical", "school", "preference", "deep"]
     },
     {
         id: "wyr228",
         text: "Would you rather have perfect intuition or perfect logic?",
-        tags: ["hypothetical", "deep", "preference", "thoughtful"]
+        tags: ["hypothetical", "deep", "preference", "deep"]
     },
     {
         id: "wyr229",
         text: "Would you rather remember everything or remember only what matters?",
-        tags: ["hypothetical", "deep", "preference", "thoughtful"]
+        tags: ["hypothetical", "deep", "preference", "deep"]
     },
     {
         id: "wyr230",
         text: "Would you rather be able to estimate perfectly or measure perfectly?",
-        tags: ["hypothetical", "preference", "fun", "thoughtful"]
+        tags: ["hypothetical", "preference", "fun", "deep"]
     },
     {
         id: "wyr231",
         text: "Would you rather always know if someone is lying or always know what they're feeling?",
-        tags: ["hypothetical", "deep", "creative", "thoughtful"]
+        tags: ["hypothetical", "deep", "creative", "deep"]
     },
     {
         id: "wyr232",
@@ -4426,7 +4426,7 @@ const PROMPTS = [
     {
         id: "wyr235",
         text: "Would you rather predict the weather or predict people's behavior?",
-        tags: ["hypothetical", "creative", "fun", "thoughtful"]
+        tags: ["hypothetical", "creative", "fun", "deep"]
     },
     {
         id: "wyr236",
@@ -4436,12 +4436,12 @@ const PROMPTS = [
     {
         id: "wyr237",
         text: "Would you rather think faster or think deeper?",
-        tags: ["hypothetical", "deep", "preference", "thoughtful"]
+        tags: ["hypothetical", "deep", "preference", "deep"]
     },
     {
         id: "wyr238",
         text: "Would you rather solve a world problem or solve a personal problem instantly?",
-        tags: ["hypothetical", "deep", "values", "thoughtful"]
+        tags: ["hypothetical", "deep", "values", "deep"]
     },
     {
         id: "wyr239",
@@ -4510,7 +4510,7 @@ const PROMPTS = [
     {
         id: "wyr251",
         text: "Would you rather use candles for lighting or fairy lights?",
-        tags: ["hypothetical", "home", "preference", "cozy"]
+        tags: ["hypothetical", "home", "preference", "heartwarming"]
     },
     {
         id: "wyr252",
@@ -4594,7 +4594,7 @@ const PROMPTS = [
     {
         id: "wyr267",
         text: "Would you rather always say what you're thinking or never speak your mind again?",
-        tags: ["hypothetical", "deep", "values", "thoughtful"]
+        tags: ["hypothetical", "deep", "values", "deep"]
     },
     {
         id: "wyr268",
@@ -4614,7 +4614,7 @@ const PROMPTS = [
     {
         id: "wyr271",
         text: "Would you rather always feel lucky or always feel happy?",
-        tags: ["hypothetical", "deep", "preference", "thoughtful"]
+        tags: ["hypothetical", "deep", "preference", "deep"]
     },
     {
         id: "wyr272",
@@ -4624,7 +4624,7 @@ const PROMPTS = [
     {
         id: "wyr273",
         text: "Would you rather live in a world with no noise or a world with no color?",
-        tags: ["hypothetical", "deep", "creative", "thoughtful"]
+        tags: ["hypothetical", "deep", "creative", "deep"]
     },
     {
         id: "wyr274",
@@ -4663,27 +4663,27 @@ const PROMPTS = [
     {
         id: "wyr280",
         text: "Would you rather know a difficult truth or believe a comforting lie?",
-        tags: ["hypothetical", "values", "deep", "thoughtful"]
+        tags: ["hypothetical", "values", "deep", "deep"]
     },
     {
         id: "wyr281",
         text: "Would you rather always take responsibility or always be forgiven?",
-        tags: ["hypothetical", "values", "deep", "thoughtful"]
+        tags: ["hypothetical", "values", "deep", "deep"]
     },
     {
         id: "wyr282",
         text: "Would you rather be feared or respected?",
-        tags: ["hypothetical", "values", "deep", "thoughtful"]
+        tags: ["hypothetical", "values", "deep", "deep"]
     },
     {
         id: "wyr283",
         text: "Would you rather sacrifice time or money to help someone?",
-        tags: ["hypothetical", "values", "deep", "thoughtful"]
+        tags: ["hypothetical", "values", "deep", "deep"]
     },
     {
         id: "wyr284",
         text: "Would you rather save one person you know or many people you don't?",
-        tags: ["hypothetical", "values", "deep", "thoughtful"]
+        tags: ["hypothetical", "values", "deep", "deep"]
     },
     {
         id: "wyr285",
@@ -4693,12 +4693,12 @@ const PROMPTS = [
     {
         id: "wyr286",
         text: "Would you rather be honest and hurt feelings or stay quiet and avoid hurt?",
-        tags: ["hypothetical", "values", "deep", "thoughtful"]
+        tags: ["hypothetical", "values", "deep", "deep"]
     },
     {
         id: "wyr287",
         text: "Would you rather lose something valuable or break a promise?",
-        tags: ["hypothetical", "values", "deep", "thoughtful"]
+        tags: ["hypothetical", "values", "deep", "deep"]
     },
     {
         id: "wyr288",
@@ -4708,17 +4708,17 @@ const PROMPTS = [
     {
         id: "wyr289",
         text: "Would you rather help others anonymously or be known for helping?",
-        tags: ["hypothetical", "values", "deep", "thoughtful"]
+        tags: ["hypothetical", "values", "deep", "deep"]
     },
     {
         id: "wyr290",
         text: "Would you rather be seen as too trusting or too skeptical?",
-        tags: ["hypothetical", "values", "identity", "thoughtful"]
+        tags: ["hypothetical", "values", "identity", "deep"]
     },
     {
         id: "wyr291",
         text: "Would you rather do the right thing and be doubted or do nothing and be praised?",
-        tags: ["hypothetical", "values", "deep", "thoughtful"]
+        tags: ["hypothetical", "values", "deep", "deep"]
     },
     {
         id: "wyr292",
@@ -4733,7 +4733,7 @@ const PROMPTS = [
     {
         id: "wyr294",
         text: "Would you rather be responsible for a team or be part of one?",
-        tags: ["hypothetical", "career", "preference", "thoughtful"]
+        tags: ["hypothetical", "career", "preference", "deep"]
     },
     {
         id: "wyr295",
@@ -4743,7 +4743,7 @@ const PROMPTS = [
     {
         id: "wyr296",
         text: "Would you rather choose fairness or loyalty?",
-        tags: ["hypothetical", "values", "deep", "thoughtful"]
+        tags: ["hypothetical", "values", "deep", "deep"]
     },
     {
         id: "wyr297",
