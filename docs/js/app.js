@@ -104,7 +104,7 @@
         // Render tags
         elements.tagCloud.innerHTML = sortedTags.map(([tag, count]) => `
             <button class="tag" data-tag="${escapeHtml(tag)}">
-                #${escapeHtml(tag)}
+                ${escapeHtml(tag)}
                 <span class="tag-count">(${count})</span>
             </button>
         `).join('');
@@ -182,7 +182,7 @@
             elements.includeTagsGroup.classList.add('has-tags');
             elements.includeTagsDisplay.innerHTML = Array.from(state.includeTags).map(tag => `
                 <span class="filter-tag">
-                    #${escapeHtml(tag)}
+                    ${escapeHtml(tag)}
                     <span class="filter-tag-remove" data-tag="${escapeHtml(tag)}" data-type="include">×</span>
                 </span>
             `).join('');
@@ -196,7 +196,7 @@
             elements.excludeTagsGroup.classList.add('has-tags');
             elements.excludeTagsDisplay.innerHTML = Array.from(state.excludeTags).map(tag => `
                 <span class="filter-tag">
-                    #${escapeHtml(tag)}
+                    ${escapeHtml(tag)}
                     <span class="filter-tag-remove" data-tag="${escapeHtml(tag)}" data-type="exclude">×</span>
                 </span>
             `).join('');
