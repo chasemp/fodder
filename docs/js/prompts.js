@@ -3204,6 +3204,1561 @@ const PROMPTS = [
         id: "hd27n8",
         text: "Have you ever celebrated Christmas in July?",
         tags: ["holidays", "experience", "fun", "silly"]
+    },
+
+    // ==========================================
+    // WOULD YOU RATHER - EVERYDAY LIFE
+    // ==========================================
+    {
+        id: "wyr001",
+        text: "Would you rather never do laundry again or never wash dishes again?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+    {
+        id: "wyr002",
+        text: "Would you rather always be 10 minutes early or 20 minutes late?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+    {
+        id: "wyr003",
+        text: "Would you rather have unlimited coffee or unlimited snacks?",
+        tags: ["hypothetical", "food", "preference", "fun"]
+    },
+    {
+        id: "wyr004",
+        text: "Would you rather have a self-driving car or a personal chef?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+    {
+        id: "wyr005",
+        text: "Would you rather always have perfect Wi-Fi or unlimited phone battery?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+    {
+        id: "wyr006",
+        text: "Would you rather never lose your keys again or never lose your phone again?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+    {
+        id: "wyr007",
+        text: "Would you rather live without music or without movies?",
+        tags: ["hypothetical", "entertainment", "preference", "deep"]
+    },
+    {
+        id: "wyr008",
+        text: "Would you rather have to cook every meal or never be allowed to cook again?",
+        tags: ["hypothetical", "food", "preference", "fun"]
+    },
+    {
+        id: "wyr009",
+        text: "Would you rather only whisper or only shout?",
+        tags: ["hypothetical", "silly", "fun", "all-ages"]
+    },
+    {
+        id: "wyr010",
+        text: "Would you rather have to wear formal clothes every day or pajamas every day?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+    {
+        id: "wyr011",
+        text: "Would you rather be able to function on 2 hours of sleep or never need caffeine again?",
+        tags: ["hypothetical", "preference", "fun", "adults"]
+    },
+    {
+        id: "wyr012",
+        text: "Would you rather give up salty food or sweet food?",
+        tags: ["hypothetical", "food", "preference", "fun"]
+    },
+    {
+        id: "wyr013",
+        text: "Would you rather always hit red lights or always be stuck in slow internet?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+    {
+        id: "wyr014",
+        text: "Would you rather live without air conditioning or without heating?",
+        tags: ["hypothetical", "preference", "home", "fun"]
+    },
+    {
+        id: "wyr015",
+        text: "Would you rather have no sense of taste or no sense of smell?",
+        tags: ["hypothetical", "preference", "deep", "thoughtful"]
+    },
+    {
+        id: "wyr016",
+        text: "Would you rather always feel slightly too warm or slightly too cold?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+    {
+        id: "wyr017",
+        text: "Would you rather move to a new city every year or never leave your hometown?",
+        tags: ["hypothetical", "travel", "preference", "deep"]
+    },
+    {
+        id: "wyr018",
+        text: "Would you rather never have to clean your house or never have to pay bills?",
+        tags: ["hypothetical", "preference", "fun", "adults"]
+    },
+    {
+        id: "wyr019",
+        text: "Would you rather have a loud neighbor or a nosy neighbor?",
+        tags: ["hypothetical", "preference", "fun", "home"]
+    },
+    {
+        id: "wyr020",
+        text: "Would you rather be unable to use GPS or unable to use search engines?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+
+    // ==========================================
+    // WOULD YOU RATHER - FUNNY & SILLY
+    // ==========================================
+    {
+        id: "wyr021",
+        text: "Would you rather have spaghetti for hair or marshmallows for fingers?",
+        tags: ["hypothetical", "silly", "fun", "all-ages"]
+    },
+    {
+        id: "wyr022",
+        text: "Would you rather talk like Yoda or breathe like Darth Vader?",
+        tags: ["hypothetical", "silly", "entertainment", "fun"]
+    },
+    {
+        id: "wyr023",
+        text: "Would you rather always laugh loudly or never laugh at all?",
+        tags: ["hypothetical", "silly", "fun", "all-ages"]
+    },
+    {
+        id: "wyr024",
+        text: "Would you rather hiccup every hour or sneeze twice every hour?",
+        tags: ["hypothetical", "silly", "fun", "all-ages"]
+    },
+    {
+        id: "wyr025",
+        text: "Would you rather wear clown shoes every day or a clown wig every day?",
+        tags: ["hypothetical", "silly", "fun", "all-ages"]
+    },
+    {
+        id: "wyr026",
+        text: "Would you rather only be able to walk backward or only be able to walk sideways?",
+        tags: ["hypothetical", "silly", "fun", "all-ages"]
+    },
+    {
+        id: "wyr027",
+        text: "Would you rather sound like a cartoon character or move like one?",
+        tags: ["hypothetical", "silly", "fun", "all-ages"]
+    },
+    {
+        id: "wyr028",
+        text: "Would you rather have to rhyme everything you say or sing everything you say?",
+        tags: ["hypothetical", "silly", "fun", "all-ages"]
+    },
+    {
+        id: "wyr029",
+        text: "Would you rather have a tail you can't hide or ears that wiggle uncontrollably?",
+        tags: ["hypothetical", "silly", "fun", "all-ages"]
+    },
+    {
+        id: "wyr030",
+        text: "Would you rather be chased by one horse-sized duck or 100 duck-sized horses?",
+        tags: ["hypothetical", "silly", "fun", "all-ages"]
+    },
+    {
+        id: "wyr031",
+        text: "Would you rather burp confetti or sneeze glitter?",
+        tags: ["hypothetical", "silly", "fun", "all-ages"]
+    },
+    {
+        id: "wyr032",
+        text: "Would you rather have to wear wet socks forever or wear winter gloves all the time?",
+        tags: ["hypothetical", "silly", "fun", "all-ages"]
+    },
+    {
+        id: "wyr033",
+        text: "Would you rather your voice crack constantly or your shoes squeak constantly?",
+        tags: ["hypothetical", "silly", "fun", "all-ages"]
+    },
+    {
+        id: "wyr034",
+        text: "Would you rather blink loudly or sneeze silently?",
+        tags: ["hypothetical", "silly", "fun", "all-ages"]
+    },
+    {
+        id: "wyr035",
+        text: "Would you rather have to hop everywhere or crawl everywhere?",
+        tags: ["hypothetical", "silly", "fun", "all-ages"]
+    },
+    {
+        id: "wyr036",
+        text: "Would you rather your hair glow like a neon sign or change color every hour?",
+        tags: ["hypothetical", "silly", "creative", "fun"]
+    },
+    {
+        id: "wyr037",
+        text: "Would you rather always smell like fresh cookies or always smell like fresh flowers?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+    {
+        id: "wyr038",
+        text: "Would you rather only eat foods that are blue or only eat foods that are green?",
+        tags: ["hypothetical", "food", "silly", "fun"]
+    },
+    {
+        id: "wyr039",
+        text: "Would you rather be able to talk to bananas or understand squirrels?",
+        tags: ["hypothetical", "silly", "nature", "fun"]
+    },
+
+    // ==========================================
+    // WOULD YOU RATHER - TRAVEL & ADVENTURE
+    // ==========================================
+    {
+        id: "wyr040",
+        text: "Would you rather travel the world for free or have a mansion in your favorite place?",
+        tags: ["hypothetical", "travel", "preference", "aspiration"]
+    },
+    {
+        id: "wyr041",
+        text: "Would you rather go to space or explore the deep sea?",
+        tags: ["hypothetical", "travel", "adventurous", "fun"]
+    },
+    {
+        id: "wyr042",
+        text: "Would you rather teleport anywhere or fly (but slowly)?",
+        tags: ["hypothetical", "creative", "fun", "all-ages"]
+    },
+    {
+        id: "wyr043",
+        text: "Would you rather live on a beach or in the mountains?",
+        tags: ["hypothetical", "travel", "preference", "nature"]
+    },
+    {
+        id: "wyr044",
+        text: "Would you rather never experience jet lag again or never wait in airport lines again?",
+        tags: ["hypothetical", "travel", "preference", "fun"]
+    },
+    {
+        id: "wyr045",
+        text: "Would you rather take a road trip across your country or backpack across another?",
+        tags: ["hypothetical", "travel", "adventurous", "fun"]
+    },
+    {
+        id: "wyr046",
+        text: "Would you rather explore a rainforest or a desert?",
+        tags: ["hypothetical", "travel", "nature", "adventurous"]
+    },
+    {
+        id: "wyr047",
+        text: "Would you rather camp under the stars or stay in a luxury hotel?",
+        tags: ["hypothetical", "travel", "preference", "fun"]
+    },
+    {
+        id: "wyr048",
+        text: "Would you rather swim with dolphins or hike with llamas?",
+        tags: ["hypothetical", "nature", "adventurous", "fun"]
+    },
+    {
+        id: "wyr049",
+        text: "Would you rather visit every national park or every major city?",
+        tags: ["hypothetical", "travel", "preference", "aspiration"]
+    },
+    {
+        id: "wyr050",
+        text: "Would you rather travel only by ship or only by train?",
+        tags: ["hypothetical", "travel", "preference", "fun"]
+    },
+    {
+        id: "wyr051",
+        text: "Would you rather be able to speak every language or be able to play every instrument?",
+        tags: ["hypothetical", "creative", "preference", "aspiration"]
+    },
+    {
+        id: "wyr052",
+        text: "Would you rather take an endless free vacation or have a 4-day workweek forever?",
+        tags: ["hypothetical", "career", "preference", "fun"]
+    },
+    {
+        id: "wyr053",
+        text: "Would you rather experience ancient history firsthand or visit the future?",
+        tags: ["hypothetical", "creative", "deep", "fun"]
+    },
+    {
+        id: "wyr054",
+        text: "Would you rather travel with friends or travel alone with unlimited money?",
+        tags: ["hypothetical", "travel", "friends", "preference"]
+    },
+    {
+        id: "wyr055",
+        text: "Would you rather go on a safari or visit Antarctica?",
+        tags: ["hypothetical", "travel", "nature", "adventurous"]
+    },
+    {
+        id: "wyr056",
+        text: "Would you rather stay in an underwater hotel or a treehouse hotel?",
+        tags: ["hypothetical", "travel", "creative", "fun"]
+    },
+    {
+        id: "wyr057",
+        text: "Would you rather live abroad for a year or take a year-long cruise?",
+        tags: ["hypothetical", "travel", "preference", "adventurous"]
+    },
+    {
+        id: "wyr058",
+        text: "Would you rather never use planes again or never use cars again?",
+        tags: ["hypothetical", "travel", "preference", "thoughtful"]
+    },
+    {
+        id: "wyr059",
+        text: "Would you rather see the northern lights or a full solar eclipse?",
+        tags: ["hypothetical", "nature", "travel", "preference"]
+    },
+
+    // ==========================================
+    // WOULD YOU RATHER - SUPERPOWERS & ABILITIES
+    // ==========================================
+    {
+        id: "wyr060",
+        text: "Would you rather have super strength or super speed?",
+        tags: ["hypothetical", "creative", "fun", "all-ages"]
+    },
+    {
+        id: "wyr061",
+        text: "Would you rather be invisible for a day or able to fly for a day?",
+        tags: ["hypothetical", "creative", "fun", "all-ages"]
+    },
+    {
+        id: "wyr062",
+        text: "Would you rather read minds or control time?",
+        tags: ["hypothetical", "creative", "deep", "fun"]
+    },
+    {
+        id: "wyr063",
+        text: "Would you rather talk to animals or speak every human language?",
+        tags: ["hypothetical", "creative", "nature", "fun"]
+    },
+    {
+        id: "wyr064",
+        text: "Would you rather have a photographic memory or the ability to forget anything at will?",
+        tags: ["hypothetical", "creative", "deep", "thoughtful"]
+    },
+    {
+        id: "wyr065",
+        text: "Would you rather breathe underwater or survive extreme temperatures?",
+        tags: ["hypothetical", "creative", "adventurous", "fun"]
+    },
+    {
+        id: "wyr066",
+        text: "Would you rather teleport anywhere instantly or be able to freeze time?",
+        tags: ["hypothetical", "creative", "fun", "all-ages"]
+    },
+    {
+        id: "wyr067",
+        text: "Would you rather be able to clone yourself or shapeshift?",
+        tags: ["hypothetical", "creative", "fun", "all-ages"]
+    },
+    {
+        id: "wyr068",
+        text: "Would you rather control fire or control water?",
+        tags: ["hypothetical", "creative", "fun", "all-ages"]
+    },
+    {
+        id: "wyr069",
+        text: "Would you rather have night vision or X-ray vision?",
+        tags: ["hypothetical", "creative", "fun", "all-ages"]
+    },
+    {
+        id: "wyr070",
+        text: "Would you rather be able to heal others or heal yourself?",
+        tags: ["hypothetical", "creative", "deep", "values"]
+    },
+    {
+        id: "wyr071",
+        text: "Would you rather be able to shrink or grow super tall at will?",
+        tags: ["hypothetical", "creative", "silly", "fun"]
+    },
+    {
+        id: "wyr072",
+        text: "Would you rather have super luck or super intelligence?",
+        tags: ["hypothetical", "creative", "preference", "thoughtful"]
+    },
+    {
+        id: "wyr073",
+        text: "Would you rather always know the truth or always be believed?",
+        tags: ["hypothetical", "deep", "values", "thoughtful"]
+    },
+    {
+        id: "wyr074",
+        text: "Would you rather control plants or control animals?",
+        tags: ["hypothetical", "creative", "nature", "fun"]
+    },
+    {
+        id: "wyr075",
+        text: "Would you rather be a master of every skill or a master of one?",
+        tags: ["hypothetical", "deep", "preference", "thoughtful"]
+    },
+    {
+        id: "wyr076",
+        text: "Would you rather be immune to injury or immune to embarrassment?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+    {
+        id: "wyr077",
+        text: "Would you rather switch places with your past self or future self for a day?",
+        tags: ["hypothetical", "creative", "deep", "reflection"]
+    },
+    {
+        id: "wyr078",
+        text: "Would you rather rewind 30 seconds or fast-forward 30 seconds?",
+        tags: ["hypothetical", "creative", "fun", "all-ages"]
+    },
+    {
+        id: "wyr079",
+        text: "Would you rather be able to pause your emotions or amplify the positive ones?",
+        tags: ["hypothetical", "deep", "selfawareness", "thoughtful"]
+    },
+
+    // ==========================================
+    // WOULD YOU RATHER - POP CULTURE & FICTION
+    // ==========================================
+    {
+        id: "wyr080",
+        text: "Would you rather live in a superhero universe or a fantasy universe?",
+        tags: ["hypothetical", "entertainment", "creative", "fun"]
+    },
+    {
+        id: "wyr081",
+        text: "Would you rather attend Hogwarts or Jedi training?",
+        tags: ["hypothetical", "entertainment", "creative", "fun"]
+    },
+    {
+        id: "wyr082",
+        text: "Would you rather be a Pokémon trainer or a pirate in One Piece?",
+        tags: ["hypothetical", "entertainment", "creative", "fun"]
+    },
+    {
+        id: "wyr083",
+        text: "Would you rather wield a lightsaber or a magical staff?",
+        tags: ["hypothetical", "entertainment", "creative", "fun"]
+    },
+    {
+        id: "wyr084",
+        text: "Would you rather be in The Lord of the Rings or Star Wars?",
+        tags: ["hypothetical", "entertainment", "creative", "fun"]
+    },
+    {
+        id: "wyr085",
+        text: "Would you rather be a detective in a mystery novel or a hero in an adventure novel?",
+        tags: ["hypothetical", "entertainment", "creative", "fun"]
+    },
+    {
+        id: "wyr086",
+        text: "Would you rather be a character in a sitcom or an action movie?",
+        tags: ["hypothetical", "entertainment", "creative", "fun"]
+    },
+    {
+        id: "wyr087",
+        text: "Would you rather have a robot sidekick or a dragon sidekick?",
+        tags: ["hypothetical", "creative", "fun", "all-ages"]
+    },
+    {
+        id: "wyr088",
+        text: "Would you rather ride a flying broom or a flying carpet?",
+        tags: ["hypothetical", "creative", "fun", "all-ages"]
+    },
+    {
+        id: "wyr089",
+        text: "Would you rather visit Jurassic Park or Willy Wonka's factory?",
+        tags: ["hypothetical", "entertainment", "fun", "all-ages"]
+    },
+    {
+        id: "wyr090",
+        text: "Would you rather live in the Mario world or the Zelda world?",
+        tags: ["hypothetical", "entertainment", "creative", "fun"]
+    },
+    {
+        id: "wyr091",
+        text: "Would you rather be a famous movie star or a famous musician?",
+        tags: ["hypothetical", "entertainment", "career", "aspiration"]
+    },
+    {
+        id: "wyr092",
+        text: "Would you rather be in a time-loop movie or a treasure hunt movie?",
+        tags: ["hypothetical", "entertainment", "creative", "fun"]
+    },
+    {
+        id: "wyr093",
+        text: "Would you rather fight zombies or aliens (in PG-13 style!)?",
+        tags: ["hypothetical", "entertainment", "silly", "fun"]
+    },
+    {
+        id: "wyr094",
+        text: "Would you rather join the Avengers or the Justice League?",
+        tags: ["hypothetical", "entertainment", "fun", "all-ages"]
+    },
+    {
+        id: "wyr095",
+        text: "Would you rather star in a comedy or an action movie?",
+        tags: ["hypothetical", "entertainment", "preference", "fun"]
+    },
+    {
+        id: "wyr096",
+        text: "Would you rather have a theme song play every time you walk in a room or dramatic lighting?",
+        tags: ["hypothetical", "silly", "creative", "fun"]
+    },
+    {
+        id: "wyr097",
+        text: "Would you rather be a wizard with weak spells or a knight with no armor?",
+        tags: ["hypothetical", "creative", "fun", "all-ages"]
+    },
+    {
+        id: "wyr098",
+        text: "Would you rather be able to travel into books or into video games?",
+        tags: ["hypothetical", "entertainment", "creative", "fun"]
+    },
+    {
+        id: "wyr099",
+        text: "Would you rather have a cameo in your favorite movie or meet the cast?",
+        tags: ["hypothetical", "entertainment", "preference", "fun"]
+    },
+
+    // ==========================================
+    // WOULD YOU RATHER - MONEY & CAREER
+    // ==========================================
+    {
+        id: "wyr100",
+        text: "Would you rather work a job you love for average pay or a job you tolerate for high pay?",
+        tags: ["hypothetical", "career", "values", "deep"]
+    },
+    {
+        id: "wyr101",
+        text: "Would you rather never have to work again or work your dream job forever?",
+        tags: ["hypothetical", "career", "aspiration", "deep"]
+    },
+    {
+        id: "wyr102",
+        text: "Would you rather get a guaranteed yearly raise or random yearly bonuses?",
+        tags: ["hypothetical", "career", "preference", "adults"]
+    },
+    {
+        id: "wyr103",
+        text: "Would you rather start your own company or run a large existing one?",
+        tags: ["hypothetical", "career", "aspiration", "adults"]
+    },
+    {
+        id: "wyr104",
+        text: "Would you rather receive $1,000 instantly or flip a coin for $10,000?",
+        tags: ["hypothetical", "preference", "fun", "risky"]
+    },
+    {
+        id: "wyr105",
+        text: "Would you rather have free groceries for life or free travel for life?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+    {
+        id: "wyr106",
+        text: "Would you rather be famous in your industry or famous worldwide for something random?",
+        tags: ["hypothetical", "career", "aspiration", "fun"]
+    },
+    {
+        id: "wyr107",
+        text: "Would you rather have a personal assistant or a personal trainer?",
+        tags: ["hypothetical", "preference", "fun", "adults"]
+    },
+    {
+        id: "wyr108",
+        text: "Would you rather take a month off paid or get a one-time $10k bonus?",
+        tags: ["hypothetical", "career", "preference", "adults"]
+    },
+    {
+        id: "wyr109",
+        text: "Would you rather be extremely productive or extremely creative?",
+        tags: ["hypothetical", "career", "preference", "thoughtful"]
+    },
+    {
+        id: "wyr110",
+        text: "Would you rather have a four-day weekend or a four-day workweek?",
+        tags: ["hypothetical", "career", "preference", "fun"]
+    },
+    {
+        id: "wyr111",
+        text: "Would you rather work remotely forever or have a beautiful office space?",
+        tags: ["hypothetical", "career", "preference", "adults"]
+    },
+    {
+        id: "wyr112",
+        text: "Would you rather retire at 40 or work part-time forever?",
+        tags: ["hypothetical", "career", "aspiration", "adults"]
+    },
+    {
+        id: "wyr113",
+        text: "Would you rather be known as the best leader or the best teammate?",
+        tags: ["hypothetical", "career", "values", "thoughtful"]
+    },
+    {
+        id: "wyr114",
+        text: "Would you rather be paid in cash or paid in perks?",
+        tags: ["hypothetical", "career", "preference", "adults"]
+    },
+    {
+        id: "wyr115",
+        text: "Would you rather have perfect financial knowledge or perfect emotional intelligence?",
+        tags: ["hypothetical", "deep", "values", "thoughtful"]
+    },
+    {
+        id: "wyr116",
+        text: "Would you rather win a big award or invent something useful?",
+        tags: ["hypothetical", "aspiration", "values", "thoughtful"]
+    },
+    {
+        id: "wyr117",
+        text: "Would you rather have unlimited paid vacation or unlimited sick days?",
+        tags: ["hypothetical", "career", "preference", "adults"]
+    },
+    {
+        id: "wyr118",
+        text: "Would you rather get promoted every year or switch careers every five?",
+        tags: ["hypothetical", "career", "preference", "adults"]
+    },
+    {
+        id: "wyr119",
+        text: "Would you rather be a great mentor or have a great mentor?",
+        tags: ["hypothetical", "career", "values", "thoughtful"]
+    },
+
+    // ==========================================
+    // WOULD YOU RATHER - RELATIONSHIPS & SOCIAL
+    // ==========================================
+    {
+        id: "wyr120",
+        text: "Would you rather have a small, close group of friends or a large group of acquaintances?",
+        tags: ["hypothetical", "friends", "preference", "deep"]
+    },
+    {
+        id: "wyr121",
+        text: "Would you rather host every party or attend every party?",
+        tags: ["hypothetical", "friends", "preference", "fun"]
+    },
+    {
+        id: "wyr122",
+        text: "Would you rather be great at giving gifts or great at receiving them?",
+        tags: ["hypothetical", "friends", "preference", "fun"]
+    },
+    {
+        id: "wyr123",
+        text: "Would you rather go on a blind date or go on a group date?",
+        tags: ["hypothetical", "friends", "preference", "adults"]
+    },
+    {
+        id: "wyr124",
+        text: "Would you rather have deep conversations or fun, lighthearted conversations?",
+        tags: ["hypothetical", "friends", "preference", "deep"]
+    },
+    {
+        id: "wyr125",
+        text: "Would you rather text someone or call them?",
+        tags: ["hypothetical", "friends", "preference", "all-ages"]
+    },
+    {
+        id: "wyr126",
+        text: "Would you rather forget someone's name or forget their birthday?",
+        tags: ["hypothetical", "friends", "fun", "all-ages"]
+    },
+    {
+        id: "wyr127",
+        text: "Would you rather have a friend who always runs late or a friend who always cancels?",
+        tags: ["hypothetical", "friends", "preference", "fun"]
+    },
+    {
+        id: "wyr128",
+        text: "Would you rather have to apologize first or wait for the other person forever?",
+        tags: ["hypothetical", "friends", "values", "deep"]
+    },
+    {
+        id: "wyr129",
+        text: "Would you rather be known for your kindness or your humor?",
+        tags: ["hypothetical", "identity", "values", "deep"]
+    },
+    {
+        id: "wyr130",
+        text: "Would you rather always know the right thing to say or the right gift to give?",
+        tags: ["hypothetical", "friends", "preference", "fun"]
+    },
+    {
+        id: "wyr131",
+        text: "Would you rather be too honest or too polite?",
+        tags: ["hypothetical", "values", "deep", "thoughtful"]
+    },
+    {
+        id: "wyr132",
+        text: "Would you rather make new friends easily or keep old friends forever?",
+        tags: ["hypothetical", "friends", "preference", "deep"]
+    },
+    {
+        id: "wyr133",
+        text: "Would you rather be the funniest person in the room or the smartest?",
+        tags: ["hypothetical", "identity", "preference", "fun"]
+    },
+    {
+        id: "wyr134",
+        text: "Would you rather everyone trust you or everyone admire you?",
+        tags: ["hypothetical", "values", "deep", "thoughtful"]
+    },
+    {
+        id: "wyr135",
+        text: "Would you rather spend a day with family or a day with friends?",
+        tags: ["hypothetical", "family", "friends", "preference"]
+    },
+    {
+        id: "wyr136",
+        text: "Would you rather get surprise visits or surprise messages?",
+        tags: ["hypothetical", "friends", "preference", "fun"]
+    },
+    {
+        id: "wyr137",
+        text: "Would you rather give great advice or always follow great advice?",
+        tags: ["hypothetical", "values", "deep", "thoughtful"]
+    },
+    {
+        id: "wyr138",
+        text: "Would you rather resolve conflict quickly or avoid conflict entirely?",
+        tags: ["hypothetical", "friends", "values", "deep"]
+    },
+    {
+        id: "wyr139",
+        text: "Would you rather always be invited or always be the host?",
+        tags: ["hypothetical", "friends", "preference", "fun"]
+    },
+
+    // ==========================================
+    // WOULD YOU RATHER - CREATIVE & DEEP
+    // ==========================================
+    {
+        id: "wyr140",
+        text: "Would you rather see your future or change one decision from your past?",
+        tags: ["hypothetical", "deep", "reflection", "thoughtful"]
+    },
+    {
+        id: "wyr141",
+        text: "Would you rather be misunderstood or ignored?",
+        tags: ["hypothetical", "deep", "reflection", "thoughtful"]
+    },
+    {
+        id: "wyr142",
+        text: "Would you rather know how every story ends or never be spoiled again?",
+        tags: ["hypothetical", "entertainment", "preference", "fun"]
+    },
+    {
+        id: "wyr143",
+        text: "Would you rather create something that changes the world or something that lasts forever?",
+        tags: ["hypothetical", "legacy", "deep", "values"]
+    },
+    {
+        id: "wyr144",
+        text: "Would you rather be known for your art or your ideas?",
+        tags: ["hypothetical", "legacy", "creative", "deep"]
+    },
+    {
+        id: "wyr145",
+        text: "Would you rather feel every emotion deeply or feel only the positive ones lightly?",
+        tags: ["hypothetical", "deep", "selfawareness", "thoughtful"]
+    },
+    {
+        id: "wyr146",
+        text: "Would you rather explore outer space or explore your own subconscious?",
+        tags: ["hypothetical", "deep", "creative", "thoughtful"]
+    },
+    {
+        id: "wyr147",
+        text: "Would you rather understand the meaning of life or understand how the universe began?",
+        tags: ["hypothetical", "deep", "thoughtful", "values"]
+    },
+    {
+        id: "wyr148",
+        text: "Would you rather write a book or direct a movie?",
+        tags: ["hypothetical", "creative", "aspiration", "entertainment"]
+    },
+    {
+        id: "wyr149",
+        text: "Would you rather inspire millions or help a few people deeply?",
+        tags: ["hypothetical", "legacy", "values", "deep"]
+    },
+    {
+        id: "wyr150",
+        text: "Would you rather forget your worst memory or relive your best memory?",
+        tags: ["hypothetical", "memories", "deep", "reflection"]
+    },
+    {
+        id: "wyr151",
+        text: "Would you rather always dream vividly or rarely dream at all?",
+        tags: ["hypothetical", "preference", "creative", "fun"]
+    },
+    {
+        id: "wyr152",
+        text: "Would you rather have infinite creativity or infinite patience?",
+        tags: ["hypothetical", "creative", "preference", "deep"]
+    },
+    {
+        id: "wyr153",
+        text: "Would you rather have a brilliant idea once or decent ideas forever?",
+        tags: ["hypothetical", "creative", "preference", "thoughtful"]
+    },
+    {
+        id: "wyr154",
+        text: "Would you rather travel to the past to witness something or to the future to learn something?",
+        tags: ["hypothetical", "creative", "deep", "fun"]
+    },
+    {
+        id: "wyr155",
+        text: "Would you rather know every truth or maintain some comforting illusions?",
+        tags: ["hypothetical", "deep", "values", "thoughtful"]
+    },
+    {
+        id: "wyr156",
+        text: "Would you rather be a philosopher or an inventor?",
+        tags: ["hypothetical", "creative", "career", "deep"]
+    },
+    {
+        id: "wyr157",
+        text: "Would you rather live a simple but peaceful life or an exciting but stressful one?",
+        tags: ["hypothetical", "deep", "values", "reflection"]
+    },
+    {
+        id: "wyr158",
+        text: "Would you rather make art no one sees or make art you don't like but everyone loves?",
+        tags: ["hypothetical", "creative", "values", "deep"]
+    },
+    {
+        id: "wyr159",
+        text: "Would you rather be remembered for a single great achievement or many small ones?",
+        tags: ["hypothetical", "legacy", "values", "deep"]
+    },
+
+    // ==========================================
+    // WOULD YOU RATHER - PARTY & ICEBREAKER
+    // ==========================================
+    {
+        id: "wyr160",
+        text: "Would you rather win every game you play or enjoy every game you lose?",
+        tags: ["hypothetical", "fun", "preference", "all-ages"]
+    },
+    {
+        id: "wyr161",
+        text: "Would you rather be the funniest person at the party or the best dancer?",
+        tags: ["hypothetical", "fun", "preference", "all-ages"]
+    },
+    {
+        id: "wyr162",
+        text: "Would you rather only eat party food or only eat healthy food forever?",
+        tags: ["hypothetical", "food", "preference", "fun"]
+    },
+    {
+        id: "wyr163",
+        text: "Would you rather host karaoke or do stand-up comedy?",
+        tags: ["hypothetical", "fun", "preference", "all-ages"]
+    },
+    {
+        id: "wyr164",
+        text: "Would you rather always get the last slice of pizza or always pick the movie?",
+        tags: ["hypothetical", "fun", "preference", "all-ages"]
+    },
+    {
+        id: "wyr165",
+        text: "Would you rather sing a solo or dance a solo?",
+        tags: ["hypothetical", "fun", "preference", "all-ages"]
+    },
+    {
+        id: "wyr166",
+        text: "Would you rather go to a costume party or a fancy gala?",
+        tags: ["hypothetical", "fun", "preference", "all-ages"]
+    },
+    {
+        id: "wyr167",
+        text: "Would you rather play board games or video games?",
+        tags: ["hypothetical", "entertainment", "preference", "all-ages"]
+    },
+    {
+        id: "wyr168",
+        text: "Would you rather stay up all night socializing or leave early and sleep well?",
+        tags: ["hypothetical", "friends", "preference", "fun"]
+    },
+    {
+        id: "wyr169",
+        text: "Would you rather meet someone famous or someone incredibly wise?",
+        tags: ["hypothetical", "preference", "fun", "deep"]
+    },
+    {
+        id: "wyr170",
+        text: "Would you rather have a DJ remember your favorite song or a chef remember your favorite dish?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+    {
+        id: "wyr171",
+        text: "Would you rather be great at charades or great at trivia?",
+        tags: ["hypothetical", "fun", "preference", "all-ages"]
+    },
+    {
+        id: "wyr172",
+        text: "Would you rather start a group tradition or revive an old one?",
+        tags: ["hypothetical", "family", "friends", "heartwarming"]
+    },
+    {
+        id: "wyr173",
+        text: "Would you rather be the photographer or the one photographed?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+    {
+        id: "wyr174",
+        text: "Would you rather have unlimited snacks at a party or unlimited drinks (nonalcoholic)?",
+        tags: ["hypothetical", "food", "preference", "fun"]
+    },
+    {
+        id: "wyr175",
+        text: "Would you rather attend a game night or a movie night?",
+        tags: ["hypothetical", "entertainment", "preference", "all-ages"]
+    },
+    {
+        id: "wyr176",
+        text: "Would you rather tell an embarrassing story or listen to one?",
+        tags: ["hypothetical", "fun", "risky", "all-ages"]
+    },
+    {
+        id: "wyr177",
+        text: "Would you rather always be asked to plan the event or never be asked at all?",
+        tags: ["hypothetical", "friends", "preference", "fun"]
+    },
+    {
+        id: "wyr178",
+        text: "Would you rather play the villain in a group game or the hero?",
+        tags: ["hypothetical", "fun", "preference", "all-ages"]
+    },
+    {
+        id: "wyr179",
+        text: "Would you rather win a prize or give a prize?",
+        tags: ["hypothetical", "values", "preference", "heartwarming"]
+    },
+
+    // ==========================================
+    // WOULD YOU RATHER - FOOD & DRINK
+    // ==========================================
+    {
+        id: "wyr180",
+        text: "Would you rather never eat dessert again or never eat fast food again?",
+        tags: ["hypothetical", "food", "preference", "fun"]
+    },
+    {
+        id: "wyr181",
+        text: "Would you rather only eat spicy food or only eat bland food?",
+        tags: ["hypothetical", "food", "preference", "fun"]
+    },
+    {
+        id: "wyr182",
+        text: "Would you rather give up chocolate or cheese?",
+        tags: ["hypothetical", "food", "preference", "fun"]
+    },
+    {
+        id: "wyr183",
+        text: "Would you rather have free pizza for life or free burgers for life?",
+        tags: ["hypothetical", "food", "preference", "fun"]
+    },
+    {
+        id: "wyr184",
+        text: "Would you rather drink only iced drinks or only hot drinks?",
+        tags: ["hypothetical", "food", "preference", "fun"]
+    },
+    {
+        id: "wyr185",
+        text: "Would you rather eat breakfast foods for every meal or dinner foods for every meal?",
+        tags: ["hypothetical", "food", "preference", "fun"]
+    },
+    {
+        id: "wyr186",
+        text: "Would you rather never drink soda again or never drink juice again?",
+        tags: ["hypothetical", "food", "preference", "all-ages"]
+    },
+    {
+        id: "wyr187",
+        text: "Would you rather have to try a new food every day or never try new foods again?",
+        tags: ["hypothetical", "food", "preference", "adventurous"]
+    },
+    {
+        id: "wyr188",
+        text: "Would you rather cook everything from scratch or eat pre-made meals forever?",
+        tags: ["hypothetical", "food", "preference", "fun"]
+    },
+    {
+        id: "wyr189",
+        text: "Would you rather only eat sweet things or only eat savory things?",
+        tags: ["hypothetical", "food", "preference", "fun"]
+    },
+    {
+        id: "wyr190",
+        text: "Would you rather eat with chopsticks forever or eat with a spoon only?",
+        tags: ["hypothetical", "food", "silly", "fun"]
+    },
+    {
+        id: "wyr191",
+        text: "Would you rather give up snacks or give up full meals?",
+        tags: ["hypothetical", "food", "preference", "fun"]
+    },
+    {
+        id: "wyr192",
+        text: "Would you rather eat only your favorite food forever or never eat it again?",
+        tags: ["hypothetical", "food", "preference", "deep"]
+    },
+    {
+        id: "wyr193",
+        text: "Would you rather have unlimited ice cream or unlimited cookies?",
+        tags: ["hypothetical", "food", "preference", "all-ages"]
+    },
+    {
+        id: "wyr194",
+        text: "Would you rather eat something too cold or something too hot?",
+        tags: ["hypothetical", "food", "preference", "fun"]
+    },
+    {
+        id: "wyr195",
+        text: "Would you rather eat at home always or eat out always?",
+        tags: ["hypothetical", "food", "preference", "fun"]
+    },
+    {
+        id: "wyr196",
+        text: "Would you rather never season your food or always over-season it?",
+        tags: ["hypothetical", "food", "preference", "fun"]
+    },
+    {
+        id: "wyr197",
+        text: "Would you rather have a food named after you or invent a new flavor?",
+        tags: ["hypothetical", "food", "creative", "fun"]
+    },
+    {
+        id: "wyr198",
+        text: "Would you rather eat fruits only or vegetables only for a week?",
+        tags: ["hypothetical", "food", "preference", "fun"]
+    },
+    {
+        id: "wyr199",
+        text: "Would you rather grow your own food or hunt/fish for it?",
+        tags: ["hypothetical", "food", "nature", "preference"]
+    },
+
+    // ==========================================
+    // WOULD YOU RATHER - ANIMALS
+    // ==========================================
+    {
+        id: "wyr200",
+        text: "Would you rather have a pet dolphin or a pet eagle?",
+        tags: ["hypothetical", "nature", "preference", "fun"]
+    },
+    {
+        id: "wyr201",
+        text: "Would you rather talk to dogs or talk to cats?",
+        tags: ["hypothetical", "nature", "preference", "fun"]
+    },
+    {
+        id: "wyr202",
+        text: "Would you rather ride a giant turtle or a giant rabbit?",
+        tags: ["hypothetical", "nature", "silly", "fun"]
+    },
+    {
+        id: "wyr203",
+        text: "Would you rather have a pet that can fly or a pet that can swim underwater forever?",
+        tags: ["hypothetical", "nature", "creative", "fun"]
+    },
+    {
+        id: "wyr204",
+        text: "Would you rather be able to run like a cheetah or swim like a dolphin?",
+        tags: ["hypothetical", "nature", "creative", "fun"]
+    },
+    {
+        id: "wyr205",
+        text: "Would you rather cuddle a panda or cuddle a koala?",
+        tags: ["hypothetical", "nature", "preference", "cozy"]
+    },
+    {
+        id: "wyr206",
+        text: "Would you rather be followed by ducks or followed by kittens all day?",
+        tags: ["hypothetical", "nature", "silly", "fun"]
+    },
+    {
+        id: "wyr207",
+        text: "Would you rather own a horse or own a parrot?",
+        tags: ["hypothetical", "nature", "preference", "fun"]
+    },
+    {
+        id: "wyr208",
+        text: "Would you rather meet a friendly shark or a friendly bear?",
+        tags: ["hypothetical", "nature", "adventurous", "fun"]
+    },
+    {
+        id: "wyr209",
+        text: "Would you rather protect endangered species or discover new species?",
+        tags: ["hypothetical", "nature", "stewardship", "values"]
+    },
+    {
+        id: "wyr210",
+        text: "Would you rather have a tiny pet elephant or a giant pet hamster?",
+        tags: ["hypothetical", "nature", "silly", "fun"]
+    },
+    {
+        id: "wyr211",
+        text: "Would you rather be able to mimic any animal sound or any musical instrument?",
+        tags: ["hypothetical", "creative", "preference", "fun"]
+    },
+    {
+        id: "wyr212",
+        text: "Would you rather be able to tame wild animals or train domestic animals perfectly?",
+        tags: ["hypothetical", "nature", "creative", "fun"]
+    },
+    {
+        id: "wyr213",
+        text: "Would you rather have a pet that never gets sick or a pet that never makes a mess?",
+        tags: ["hypothetical", "nature", "preference", "fun"]
+    },
+    {
+        id: "wyr214",
+        text: "Would you rather ride a lion (friendly!) or a dragon (small and peaceful)?",
+        tags: ["hypothetical", "creative", "adventurous", "fun"]
+    },
+    {
+        id: "wyr215",
+        text: "Would you rather swim with sea turtles or climb with mountain goats?",
+        tags: ["hypothetical", "nature", "adventurous", "fun"]
+    },
+    {
+        id: "wyr216",
+        text: "Would you rather see extinct animals return or see endangered ones saved?",
+        tags: ["hypothetical", "nature", "stewardship", "deep"]
+    },
+    {
+        id: "wyr217",
+        text: "Would you rather have a pet that talks or a pet that does chores?",
+        tags: ["hypothetical", "nature", "silly", "fun"]
+    },
+    {
+        id: "wyr218",
+        text: "Would you rather have bees make honey just for you or birds sing when you enter a room?",
+        tags: ["hypothetical", "nature", "creative", "cozy"]
+    },
+    {
+        id: "wyr219",
+        text: "Would you rather volunteer at a zoo or volunteer at an animal rescue?",
+        tags: ["hypothetical", "nature", "values", "heartwarming"]
+    },
+
+    // ==========================================
+    // WOULD YOU RATHER - LOGIC & CHALLENGE
+    // ==========================================
+    {
+        id: "wyr220",
+        text: "Would you rather solve a mystery or solve a puzzle?",
+        tags: ["hypothetical", "preference", "fun", "thoughtful"]
+    },
+    {
+        id: "wyr221",
+        text: "Would you rather have an answer to every question or be able to ask perfect questions?",
+        tags: ["hypothetical", "deep", "thoughtful", "creative"]
+    },
+    {
+        id: "wyr222",
+        text: "Would you rather be unbeatable at chess or unbeatable at strategy games?",
+        tags: ["hypothetical", "preference", "fun", "thoughtful"]
+    },
+    {
+        id: "wyr223",
+        text: "Would you rather always win arguments or never get into arguments at all?",
+        tags: ["hypothetical", "preference", "values", "thoughtful"]
+    },
+    {
+        id: "wyr224",
+        text: "Would you rather have to make decisions instantly or take hours to decide everything?",
+        tags: ["hypothetical", "preference", "fun", "thoughtful"]
+    },
+    {
+        id: "wyr225",
+        text: "Would you rather know all trivia or know all practical skills?",
+        tags: ["hypothetical", "preference", "fun", "thoughtful"]
+    },
+    {
+        id: "wyr226",
+        text: "Would you rather solve a crime or prevent one?",
+        tags: ["hypothetical", "values", "deep", "thoughtful"]
+    },
+    {
+        id: "wyr227",
+        text: "Would you rather understand every math concept or every language concept?",
+        tags: ["hypothetical", "school", "preference", "thoughtful"]
+    },
+    {
+        id: "wyr228",
+        text: "Would you rather have perfect intuition or perfect logic?",
+        tags: ["hypothetical", "deep", "preference", "thoughtful"]
+    },
+    {
+        id: "wyr229",
+        text: "Would you rather remember everything or remember only what matters?",
+        tags: ["hypothetical", "deep", "preference", "thoughtful"]
+    },
+    {
+        id: "wyr230",
+        text: "Would you rather be able to estimate perfectly or measure perfectly?",
+        tags: ["hypothetical", "preference", "fun", "thoughtful"]
+    },
+    {
+        id: "wyr231",
+        text: "Would you rather always know if someone is lying or always know what they're feeling?",
+        tags: ["hypothetical", "deep", "creative", "thoughtful"]
+    },
+    {
+        id: "wyr232",
+        text: "Would you rather take on a challenge alone or with a team?",
+        tags: ["hypothetical", "preference", "friends", "fun"]
+    },
+    {
+        id: "wyr233",
+        text: "Would you rather escape a maze or solve a riddle to earn your freedom?",
+        tags: ["hypothetical", "creative", "fun", "adventurous"]
+    },
+    {
+        id: "wyr234",
+        text: "Would you rather complete a quest or complete a collection?",
+        tags: ["hypothetical", "preference", "fun", "hobbies"]
+    },
+    {
+        id: "wyr235",
+        text: "Would you rather predict the weather or predict people's behavior?",
+        tags: ["hypothetical", "creative", "fun", "thoughtful"]
+    },
+    {
+        id: "wyr236",
+        text: "Would you rather have unlimited curiosity or unlimited patience?",
+        tags: ["hypothetical", "deep", "preference", "values"]
+    },
+    {
+        id: "wyr237",
+        text: "Would you rather think faster or think deeper?",
+        tags: ["hypothetical", "deep", "preference", "thoughtful"]
+    },
+    {
+        id: "wyr238",
+        text: "Would you rather solve a world problem or solve a personal problem instantly?",
+        tags: ["hypothetical", "deep", "values", "thoughtful"]
+    },
+    {
+        id: "wyr239",
+        text: "Would you rather learn anything instantly or teach anything easily?",
+        tags: ["hypothetical", "preference", "school", "values"]
+    },
+
+    // ==========================================
+    // WOULD YOU RATHER - LIFESTYLE & PREFERENCES
+    // ==========================================
+    {
+        id: "wyr240",
+        text: "Would you rather wake up early every day or stay up late every night?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+    {
+        id: "wyr241",
+        text: "Would you rather live somewhere always cold or always warm?",
+        tags: ["hypothetical", "preference", "home", "fun"]
+    },
+    {
+        id: "wyr242",
+        text: "Would you rather read books or watch movies?",
+        tags: ["hypothetical", "entertainment", "preference", "all-ages"]
+    },
+    {
+        id: "wyr243",
+        text: "Would you rather work out in the morning or the evening?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+    {
+        id: "wyr244",
+        text: "Would you rather dress formally or dress casually forever?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+    {
+        id: "wyr245",
+        text: "Would you rather live in a tiny home or a huge house with empty rooms?",
+        tags: ["hypothetical", "home", "preference", "fun"]
+    },
+    {
+        id: "wyr246",
+        text: "Would you rather spend your day outdoors or indoors?",
+        tags: ["hypothetical", "preference", "nature", "fun"]
+    },
+    {
+        id: "wyr247",
+        text: "Would you rather live without social media or without TV?",
+        tags: ["hypothetical", "entertainment", "preference", "digitalethics"]
+    },
+    {
+        id: "wyr248",
+        text: "Would you rather decorate your home in bright colors or neutral tones?",
+        tags: ["hypothetical", "home", "preference", "fun"]
+    },
+    {
+        id: "wyr249",
+        text: "Would you rather have a minimalist lifestyle or a cozy, cluttered one?",
+        tags: ["hypothetical", "home", "preference", "fun"]
+    },
+    {
+        id: "wyr250",
+        text: "Would you rather sleep with no pillow or sleep with too many pillows?",
+        tags: ["hypothetical", "preference", "silly", "fun"]
+    },
+    {
+        id: "wyr251",
+        text: "Would you rather use candles for lighting or fairy lights?",
+        tags: ["hypothetical", "home", "preference", "cozy"]
+    },
+    {
+        id: "wyr252",
+        text: "Would you rather only buy handmade items or only buy mass-produced items?",
+        tags: ["hypothetical", "preference", "values", "fun"]
+    },
+    {
+        id: "wyr253",
+        text: "Would you rather have an endless wardrobe or an endlessly clean house?",
+        tags: ["hypothetical", "preference", "home", "fun"]
+    },
+    {
+        id: "wyr254",
+        text: "Would you rather spend money on experiences or on things?",
+        tags: ["hypothetical", "values", "preference", "deep"]
+    },
+    {
+        id: "wyr255",
+        text: "Would you rather garden or bake?",
+        tags: ["hypothetical", "hobbies", "preference", "fun"]
+    },
+    {
+        id: "wyr256",
+        text: "Would you rather live near water or near forests?",
+        tags: ["hypothetical", "nature", "home", "preference"]
+    },
+    {
+        id: "wyr257",
+        text: "Would you rather do chores quickly or do them perfectly?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+    {
+        id: "wyr258",
+        text: "Would you rather have a home theater or a home library?",
+        tags: ["hypothetical", "home", "entertainment", "preference"]
+    },
+    {
+        id: "wyr259",
+        text: "Would you rather live alone in peace or with roommates who are fun but messy?",
+        tags: ["hypothetical", "home", "preference", "fun"]
+    },
+
+    // ==========================================
+    // WOULD YOU RATHER - RANDOM & HYPOTHETICAL
+    // ==========================================
+    {
+        id: "wyr260",
+        text: "Would you rather teleport objects or duplicate objects?",
+        tags: ["hypothetical", "creative", "fun", "all-ages"]
+    },
+    {
+        id: "wyr261",
+        text: "Would you rather always get free upgrades or always get free samples?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+    {
+        id: "wyr262",
+        text: "Would you rather see colors no one else can see or hear sounds no one else can hear?",
+        tags: ["hypothetical", "creative", "deep", "fun"]
+    },
+    {
+        id: "wyr263",
+        text: "Would you rather discover buried treasure or hidden knowledge?",
+        tags: ["hypothetical", "adventurous", "preference", "fun"]
+    },
+    {
+        id: "wyr264",
+        text: "Would you rather live 200 years in the past or 200 years in the future?",
+        tags: ["hypothetical", "creative", "deep", "fun"]
+    },
+    {
+        id: "wyr265",
+        text: "Would you rather have a pause button for life or a rewind button?",
+        tags: ["hypothetical", "creative", "deep", "fun"]
+    },
+    {
+        id: "wyr266",
+        text: "Would you rather always know where everything you lost is or never lose anything again?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+    {
+        id: "wyr267",
+        text: "Would you rather always say what you're thinking or never speak your mind again?",
+        tags: ["hypothetical", "deep", "values", "thoughtful"]
+    },
+    {
+        id: "wyr268",
+        text: "Would you rather live underwater or in the sky?",
+        tags: ["hypothetical", "creative", "fun", "all-ages"]
+    },
+    {
+        id: "wyr269",
+        text: "Would you rather survive in a fantasy world or thrive in a sci-fi world?",
+        tags: ["hypothetical", "entertainment", "creative", "fun"]
+    },
+    {
+        id: "wyr270",
+        text: "Would you rather swap lives with someone for a week or swap jobs with someone for a week?",
+        tags: ["hypothetical", "creative", "fun", "career"]
+    },
+    {
+        id: "wyr271",
+        text: "Would you rather always feel lucky or always feel happy?",
+        tags: ["hypothetical", "deep", "preference", "thoughtful"]
+    },
+    {
+        id: "wyr272",
+        text: "Would you rather stretch your limbs like elastic or bounce like a trampoline?",
+        tags: ["hypothetical", "silly", "creative", "fun"]
+    },
+    {
+        id: "wyr273",
+        text: "Would you rather live in a world with no noise or a world with no color?",
+        tags: ["hypothetical", "deep", "creative", "thoughtful"]
+    },
+    {
+        id: "wyr274",
+        text: "Would you rather control your dreams or remember every dream vividly?",
+        tags: ["hypothetical", "creative", "preference", "fun"]
+    },
+    {
+        id: "wyr275",
+        text: "Would you rather time travel but only forward or only backward?",
+        tags: ["hypothetical", "creative", "deep", "fun"]
+    },
+    {
+        id: "wyr276",
+        text: "Would you rather live in a world where everyone sings or everyone dances?",
+        tags: ["hypothetical", "silly", "creative", "fun"]
+    },
+    {
+        id: "wyr277",
+        text: "Would you rather know every answer on a test or win a random lottery?",
+        tags: ["hypothetical", "preference", "fun", "school"]
+    },
+    {
+        id: "wyr278",
+        text: "Would you rather be able to rewind conversations or listen to thoughts as music?",
+        tags: ["hypothetical", "creative", "deep", "fun"]
+    },
+    {
+        id: "wyr279",
+        text: "Would you rather have a magic fridge that refills itself or a magic wallet that always has $10?",
+        tags: ["hypothetical", "preference", "fun", "all-ages"]
+    },
+
+    // ==========================================
+    // WOULD YOU RATHER - MORAL CHOICES
+    // ==========================================
+    {
+        id: "wyr280",
+        text: "Would you rather know a difficult truth or believe a comforting lie?",
+        tags: ["hypothetical", "values", "deep", "thoughtful"]
+    },
+    {
+        id: "wyr281",
+        text: "Would you rather always take responsibility or always be forgiven?",
+        tags: ["hypothetical", "values", "deep", "thoughtful"]
+    },
+    {
+        id: "wyr282",
+        text: "Would you rather be feared or respected?",
+        tags: ["hypothetical", "values", "deep", "thoughtful"]
+    },
+    {
+        id: "wyr283",
+        text: "Would you rather sacrifice time or money to help someone?",
+        tags: ["hypothetical", "values", "deep", "thoughtful"]
+    },
+    {
+        id: "wyr284",
+        text: "Would you rather save one person you know or many people you don't?",
+        tags: ["hypothetical", "values", "deep", "thoughtful"]
+    },
+    {
+        id: "wyr285",
+        text: "Would you rather have others depend on you or depend on others?",
+        tags: ["hypothetical", "values", "deep", "reflection"]
+    },
+    {
+        id: "wyr286",
+        text: "Would you rather be honest and hurt feelings or stay quiet and avoid hurt?",
+        tags: ["hypothetical", "values", "deep", "thoughtful"]
+    },
+    {
+        id: "wyr287",
+        text: "Would you rather lose something valuable or break a promise?",
+        tags: ["hypothetical", "values", "deep", "thoughtful"]
+    },
+    {
+        id: "wyr288",
+        text: "Would you rather forgive easily or forget easily?",
+        tags: ["hypothetical", "values", "deep", "reflection"]
+    },
+    {
+        id: "wyr289",
+        text: "Would you rather help others anonymously or be known for helping?",
+        tags: ["hypothetical", "values", "deep", "thoughtful"]
+    },
+    {
+        id: "wyr290",
+        text: "Would you rather be seen as too trusting or too skeptical?",
+        tags: ["hypothetical", "values", "identity", "thoughtful"]
+    },
+    {
+        id: "wyr291",
+        text: "Would you rather do the right thing and be doubted or do nothing and be praised?",
+        tags: ["hypothetical", "values", "deep", "thoughtful"]
+    },
+    {
+        id: "wyr292",
+        text: "Would you rather give second chances or not risk being hurt again?",
+        tags: ["hypothetical", "values", "deep", "reflection"]
+    },
+    {
+        id: "wyr293",
+        text: "Would you rather learn from mistakes or never make mistakes?",
+        tags: ["hypothetical", "values", "deep", "reflection"]
+    },
+    {
+        id: "wyr294",
+        text: "Would you rather be responsible for a team or be part of one?",
+        tags: ["hypothetical", "career", "preference", "thoughtful"]
+    },
+    {
+        id: "wyr295",
+        text: "Would you rather guide someone younger or learn from someone older?",
+        tags: ["hypothetical", "values", "family", "reflection"]
+    },
+    {
+        id: "wyr296",
+        text: "Would you rather choose fairness or loyalty?",
+        tags: ["hypothetical", "values", "deep", "thoughtful"]
+    },
+    {
+        id: "wyr297",
+        text: "Would you rather lose an argument or lose a friend?",
+        tags: ["hypothetical", "values", "friends", "deep"]
+    },
+    {
+        id: "wyr298",
+        text: "Would you rather speak up against injustice or stay safe by staying quiet?",
+        tags: ["hypothetical", "values", "bravespace", "deep"]
+    },
+    {
+        id: "wyr299",
+        text: "Would you rather be remembered as kind or as brave?",
+        tags: ["hypothetical", "legacy", "values", "deep"]
     }
 ];
 
