@@ -1,0 +1,29 @@
+{
+    "name": "Fodder - Conversation Starters",
+    "short_name": "Fodder",
+    "version": "0.0.1",
+    "description": "Family-friendly conversation prompts to spark meaningful discussions",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#FDF6E3",
+    "theme_color": "#8B4513",
+    "orientation": "portrait-primary",
+    "scope": "/",
+    "lang": "en",
+    "categories": ["lifestyle", "social", "entertainment"],
+    "icons": [
+        {
+            "src": "assets/icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        },
+        {
+            "src": "assets/icon.svg",
+            "sizes": "512x512",
+            "type": "image/svg+xml",
+            "purpose": "maskable"
+        }
+    ]
+}
+

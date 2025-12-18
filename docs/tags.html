@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags - Fodder</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#8B4513">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="brown">
+    <link rel="apple-touch-icon" href="assets/icon.svg">
+    <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Tags page specific styles */
+        .tags-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tags-header {
+            background: linear-gradient(180deg, var(--color-sienna) 0%, var(--color-mahogany) 100%);
+            color: var(--color-cream);
+            padding: var(--space-md);
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+        }
+
+        .back-btn {
+            background: rgba(255,255,255,0.15);
+            border: none;
+            color: var(--color-cream);
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.25rem;
+        }
+
+        .tags-header h1 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .tags-intro {
+            padding: var(--space-md);
+            background: var(--color-cream);
+            border-bottom: 1px solid var(--color-gold);
+        }
+
+        .tags-intro p {
+            margin: 0;
+            color: var(--color-neutral);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .category-section {
+            padding: var(--space-md);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: var(--space-sm);
+        }
+
+        .category-title {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--color-mahogany);
+            margin: 0;
+        }
+
+        .category-desc {
+            font-size: 0.8rem;
+            color: var(--color-neutral);
+            margin: 0 0 var(--space-md) 0;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+        }
+
+        .tag-item {
+            background: var(--color-cream);
+            border-radius: var(--radius-md);
+            padding: var(--space-sm) var(--space-md);
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .tag-item.excluded {
+            opacity: 0.5;
+            background: #f5f5f5;
+        }
+
+        .tag-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            width: 32px;
+            text-align: center;
+        }
+
+        .tag-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .tag-name {
+            font-weight: 600;
+            color: var(--color-espresso);
+            font-size: 0.95rem;
+        }
+
+        .tag-description {
+            font-size: 0.75rem;
+            color: var(--color-neutral);
+            line-height: 1.4;
+            margin-top: 2px;
+        }
+
+        .tag-count {
+            font-size: 0.7rem;
+            color: var(--color-sienna);
+            margin-top: 2px;
+        }
+
+        /* Toggle Switch */
+        .toggle-switch {
+            position: relative;
+            width: 52px;
+            height: 28px;
+            flex-shrink: 0;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.3s;
+            border-radius: 28px;
+        }
+
+        .toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 22px;
+            width: 22px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: 0.3s;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        input:checked + .toggle-slider {
+            background-color: var(--color-sienna);
+        }
+
+        input:checked + .toggle-slider:before {
+            transform: translateX(24px);
+        }
+
+        /* Action buttons (top and bottom) */
+        .tags-actions,
+        .tags-footer {
+            padding: var(--space-md);
+            background: var(--color-parchment);
+            border-top: 1px solid var(--color-gold);
+            display: flex;
+            gap: var(--space-sm);
+            flex-wrap: wrap;
+        }
+
+        .tags-actions {
+            border-top: none;
+            border-bottom: 1px solid var(--color-gold);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .tags-footer {
+            margin-top: auto;
+        }
+
+        .tags-actions .btn,
+        .tags-footer .btn {
+            flex: 1;
+            min-width: 90px;
+        }
+
+        /* Stats bar */
+        .stats-bar {
+            padding: var(--space-sm) var(--space-md);
+            background: var(--color-gold);
+            color: var(--color-espresso);
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .stats-bar strong {
+            color: var(--color-mahogany);
+        }
+    </style>
+</head>
+<body class="tags-page">
+    <!-- Header -->
+    <header class="tags-header">
+        <button class="back-btn" onclick="window.location.href='index.html'" aria-label="Back to cards">
+            ←
+        </button>
+        <h1>🏷️ Tag Settings</h1>
+    </header>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+        <span><strong id="active-tags">0</strong> tags enabled</span>
+        <span><strong id="available-prompts">0</strong> prompts available</span>
+    </div>
+
+    <!-- Intro -->
+    <div class="tags-intro">
+        <p>Toggle tags <strong>OFF</strong> to exclude questions with that tag from appearing. All tags are enabled by default. Your settings are saved automatically.</p>
+    </div>
+
+    <!-- Top Actions -->
+    <div class="tags-actions">
+        <button class="btn btn-secondary" id="enable-all-btn-top">Enable All</button>
+        <button class="btn btn-secondary" id="disable-all-btn-top">Disable All</button>
+        <button class="btn btn-primary" onclick="window.location.href='index.html'">Done</button>
+    </div>
+
+    <!-- Tag Categories Container -->
+    <main id="tag-categories">
+        <!-- Categories will be populated by JavaScript -->
+    </main>
+
+    <!-- Footer Actions -->
+    <footer class="tags-footer">
+        <button class="btn btn-secondary" id="enable-all-btn">Enable All</button>
+        <button class="btn btn-secondary" id="disable-all-btn">Disable All</button>
+        <button class="btn btn-primary" onclick="window.location.href='index.html'">Done</button>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/prompts.js"></script>
+    <script src="js/tagDescriptions.js"></script>
+    <script>
+    (function() {
+        'use strict';
+
+        // ============================================
+        // State
+        // ============================================
+        const STORAGE_KEY = 'fodder_excludedTags';
+        let excludedTags = new Set();
+
+        // ============================================
+        // Load/Save Settings
+        // ============================================
+        function loadSettings() {
+            try {
+                const saved = localStorage.getItem(STORAGE_KEY);
+                if (saved) {
+                    excludedTags = new Set(JSON.parse(saved));
+                }
+            } catch (e) {
+                console.error('Error loading tag settings:', e);
+                excludedTags = new Set();
+            }
+        }
+
+        function saveSettings() {
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify([...excludedTags]));
+            } catch (e) {
+                console.error('Error saving tag settings:', e);
+            }
+        }
+
+        // ============================================
+        // Count prompts per tag
+        // ============================================
+        function getTagCounts() {
+            const counts = {};
+            PROMPTS.forEach(prompt => {
+                prompt.tags.forEach(tag => {
+                    counts[tag] = (counts[tag] || 0) + 1;
+                });
+            });
+            return counts;
+        }
+
+        // ============================================
+        // Calculate available prompts
+        // ============================================
+        function countAvailablePrompts() {
+            if (excludedTags.size === 0) return PROMPTS.length;
+            
+            return PROMPTS.filter(prompt => {
+                return !prompt.tags.some(tag => excludedTags.has(tag));
+            }).length;
+        }
+
+        // ============================================
+        // Render UI
+        // ============================================
+        function renderTagCategories() {
+            const container = document.getElementById('tag-categories');
+            const tagCounts = getTagCounts();
+            
+            // Group tags by category
+            const categorizedTags = {};
+            
+            // First, get all tags used in prompts
+            const usedTags = new Set();
+            PROMPTS.forEach(p => p.tags.forEach(t => usedTags.add(t)));
+            
+            // Group tags that have descriptions
+            usedTags.forEach(tag => {
+                const desc = TAG_DESCRIPTIONS[tag];
+                const category = desc ? desc.category : 'other';
+                
+                if (!categorizedTags[category]) {
+                    categorizedTags[category] = [];
+                }
+                
+                categorizedTags[category].push({
+                    tag: tag,
+                    name: desc ? desc.name : tag,
+                    description: desc ? desc.description : `Questions tagged with #${tag}`,
+                    icon: desc ? desc.icon : '🏷️',
+                    count: tagCounts[tag] || 0
+                });
+            });
+            
+            // Sort categories by order
+            const categoryOrder = Object.entries(TAG_CATEGORIES)
+                .sort((a, b) => a[1].order - b[1].order)
+                .map(([key]) => key);
+            
+            // Add 'other' at the end if it exists
+            if (categorizedTags['other']) {
+                categoryOrder.push('other');
+            }
+            
+            // Render each category
+            let html = '';
+            categoryOrder.forEach(catKey => {
+                const tags = categorizedTags[catKey];
+                if (!tags || tags.length === 0) return;
+                
+                const catInfo = TAG_CATEGORIES[catKey] || { name: 'Other', description: 'Additional tags' };
+                
+                // Sort tags by count (descending)
+                tags.sort((a, b) => b.count - a.count);
+                
+                html += `
+                    <section class="category-section">
+                        <div class="category-header">
+                            <h2 class="category-title">${catInfo.name}</h2>
+                        </div>
+                        <p class="category-desc">${catInfo.description}</p>
+                        <div class="tag-list">
+                            ${tags.map(t => renderTagItem(t)).join('')}
+                        </div>
+                    </section>
+                `;
+            });
+            
+            container.innerHTML = html;
+            
+            // Attach event listeners
+            container.querySelectorAll('.tag-toggle').forEach(toggle => {
+                toggle.addEventListener('change', handleToggle);
+            });
+            
+            updateStats();
+        }
+
+        function renderTagItem(tagData) {
+            const isEnabled = !excludedTags.has(tagData.tag);
+            return `
+                <div class="tag-item ${isEnabled ? '' : 'excluded'}" data-tag="${tagData.tag}">
+                    <span class="tag-icon">${tagData.icon}</span>
+                    <div class="tag-info">
+                        <div class="tag-name">#${tagData.tag}</div>
+                        <div class="tag-description">${tagData.description}</div>
+                        <div class="tag-count">${tagData.count} prompts</div>
+                    </div>
+                    <label class="toggle-switch">
+                        <input type="checkbox" class="tag-toggle" data-tag="${tagData.tag}" ${isEnabled ? 'checked' : ''}>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            `;
+        }
+
+        // ============================================
+        // Event Handlers
+        // ============================================
+        function handleToggle(e) {
+            const tag = e.target.dataset.tag;
+            const isEnabled = e.target.checked;
+            
+            if (isEnabled) {
+                excludedTags.delete(tag);
+            } else {
+                excludedTags.add(tag);
+            }
+            
+            // Update visual state
+            const item = e.target.closest('.tag-item');
+            item.classList.toggle('excluded', !isEnabled);
+            
+            saveSettings();
+            updateStats();
+        }
+
+        function updateStats() {
+            const allTags = new Set();
+            PROMPTS.forEach(p => p.tags.forEach(t => allTags.add(t)));
+            
+            const activeTags = allTags.size - excludedTags.size;
+            const availablePrompts = countAvailablePrompts();
+            
+            document.getElementById('active-tags').textContent = activeTags;
+            document.getElementById('available-prompts').textContent = availablePrompts;
+        }
+
+        function enableAll() {
+            excludedTags.clear();
+            saveSettings();
+            document.querySelectorAll('.tag-toggle').forEach(toggle => {
+                toggle.checked = true;
+                toggle.closest('.tag-item').classList.remove('excluded');
+            });
+            updateStats();
+        }
+
+        function disableAll() {
+            const allTags = new Set();
+            PROMPTS.forEach(p => p.tags.forEach(t => allTags.add(t)));
+            excludedTags = allTags;
+            saveSettings();
+            document.querySelectorAll('.tag-toggle').forEach(toggle => {
+                toggle.checked = false;
+                toggle.closest('.tag-item').classList.add('excluded');
+            });
+            updateStats();
+        }
+
+        // ============================================
+        // Initialize
+        // ============================================
+        function init() {
+            loadSettings();
+            renderTagCategories();
+            
+            // Bottom buttons
+            document.getElementById('enable-all-btn').addEventListener('click', enableAll);
+            document.getElementById('disable-all-btn').addEventListener('click', disableAll);
+            
+            // Top buttons
+            document.getElementById('enable-all-btn-top').addEventListener('click', enableAll);
+            document.getElementById('disable-all-btn-top').addEventListener('click', disableAll);
+        }
+
+        // Start
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+    })();
+    </script>
+</body>
+</html>
+

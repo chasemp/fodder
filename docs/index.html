@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Fodder - Conversation Starters</title>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#8B4513">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Fodder">
+    
+    <!-- Icons -->
+    <link rel="apple-touch-icon" href="assets/icon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="assets/favicon-32x32.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="assets/favicon-16x16.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Install Prompt -->
+    <div id="install-prompt" class="install-prompt" style="display: none;">
+        <div class="install-content">
+            <span class="install-icon">📥</span>
+            <div class="install-text">
+                <strong>Install Fodder</strong>
+                <p>Add to your home screen for quick access</p>
+            </div>
+            <button id="install-btn" class="btn btn-install">Install</button>
+            <button id="dismiss-install" class="btn-close" aria-label="Dismiss">×</button>
+        </div>
+    </div>
+
+    <!-- Compact Header -->
+    <header class="header">
+        <div class="header-content">
+            <span class="logo-icon">🎴</span>
+            <h1>Fodder</h1>
+        </div>
+    </header>
+
+    <!-- Collapsible Filter Section -->
+    <section class="filter-section" id="filter-section">
+        <button class="filter-toggle" id="filter-toggle">
+            <span class="filter-toggle-text">
+                <span class="filter-icon">🏷️</span>
+                Filter by Tags
+                <span class="filter-badge" id="filter-badge"></span>
+            </span>
+            <span class="filter-arrow" id="filter-arrow">▼</span>
+        </button>
+        
+        <div class="filter-content" id="filter-content" style="display: none;">
+            <div class="filter-mode">
+                <button id="mode-include" class="mode-btn active" data-mode="include">
+                    <span class="mode-icon">✓</span> Include
+                </button>
+                <button id="mode-exclude" class="mode-btn" data-mode="exclude">
+                    <span class="mode-icon">✗</span> Exclude
+                </button>
+                <button id="clear-filters" class="btn btn-small">Clear</button>
+            </div>
+            
+            <div id="tag-cloud" class="tag-cloud">
+                <!-- Tags populated by JavaScript -->
+            </div>
+        </div>
+        
+        <div class="active-filters" id="active-filters">
+            <div id="include-tags" class="filter-group">
+                <span class="filter-label">Including:</span>
+                <div class="filter-tags"></div>
+            </div>
+            <div id="exclude-tags" class="filter-group">
+                <span class="filter-label">Excluding:</span>
+                <div class="filter-tags"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Card Display -->
+    <main class="main">
+        <!-- Controls integrated with card -->
+        <div class="card-controls">
+            <button id="random-btn" class="btn btn-primary btn-large">
+                <span class="btn-icon">🎲</span> Next
+            </button>
+            <div class="prompt-counter">
+                <span id="filtered-count">0</span>/<span id="total-count">0</span>
+            </div>
+            <button id="shuffle-btn" class="btn btn-icon-only" title="Shuffle All">
+                🔀
+            </button>
+        </div>
+
+        <div id="card-container" class="card-container">
+            <div id="prompt-card" class="prompt-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-decoration card-decoration-top"></div>
+                        <div class="card-content">
+                            <p class="prompt-text">Tap the card or press Next!</p>
+                        </div>
+                        <div class="card-decoration card-decoration-bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tags below the card -->
+        <div class="card-tags" id="card-tags">
+            <!-- Tags shown here -->
+        </div>
+    </main>
+
+    <!-- Prompt List View (toggle) -->
+    <section id="list-view" class="list-view" style="display: none;">
+        <div class="list-header">
+            <h2>All Prompts</h2>
+            <button id="close-list" class="btn-close" aria-label="Close list">×</button>
+        </div>
+        <div id="prompt-list" class="prompt-list">
+            <!-- Populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <button id="view-list-btn" class="btn btn-text">📋 All</button>
+        <a href="tags.html" class="btn btn-text">⚙️ Tags</a>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/prompts.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
