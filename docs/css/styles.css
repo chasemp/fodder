@@ -169,10 +169,11 @@ body {
    Header - Compact
    ============================================ */
 .header {
-    background: linear-gradient(180deg, var(--color-sienna) 0%, var(--color-mahogany) 100%);
-    color: var(--color-cream);
+    background: var(--color-cream);
+    color: var(--color-espresso);
     padding: var(--space-sm) var(--space-md);
     text-align: center;
+    border-bottom: 2px solid var(--color-gold);
 }
 
 .header-content {
@@ -182,11 +183,11 @@ body {
     gap: var(--space-sm);
 }
 
-.header-icon {
-    height: 32px;
+.header-logo {
+    height: 50px;
     width: auto;
+    max-width: 200px;
     object-fit: contain;
-    border-radius: var(--radius-sm);
 }
 
 .logo-icon {
