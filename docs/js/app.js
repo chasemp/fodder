@@ -319,7 +319,7 @@
         // Display tags with ID
         const idBadge = prompt.id ? `<span class="card-tag card-tag-id">${prompt.id}</span>` : '';
         elements.cardTags.innerHTML = idBadge + prompt.tags.map(tag => 
-            `<span class="card-tag">#${escapeHtml(tag)}</span>`
+            `<span class="card-tag">${escapeHtml(tag)}</span>`
         ).join('');
 
         // Update seen status on card
@@ -469,7 +469,7 @@
                     <p>${escapeHtml(prompt.text)}</p>
                 </div>
                 <div class="prompt-list-tags">
-                    ${prompt.tags.map(tag => `<span class="prompt-list-tag">#${escapeHtml(tag)}</span>`).join('')}
+                    ${prompt.tags.map(tag => `<span class="prompt-list-tag">${escapeHtml(tag)}</span>`).join('')}
                 </div>
             </div>
         `).join('');
