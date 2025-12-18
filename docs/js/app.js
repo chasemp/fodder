@@ -40,7 +40,6 @@
         modeExclude: document.getElementById('mode-exclude'),
         clearFilters: document.getElementById('clear-filters'),
         randomBtn: document.getElementById('random-btn'),
-        shuffleBtn: document.getElementById('shuffle-btn'),
         promptCard: document.getElementById('prompt-card'),
         promptText: document.querySelector('.prompt-text'),
         cardTags: document.getElementById('card-tags'),
@@ -420,8 +419,11 @@
 
     function updateFavsFilterButton() {
         if (elements.favsFilterBtn) {
+            const icon = elements.favsFilterBtn.querySelector('.fav-icon');
             elements.favsFilterBtn.classList.toggle('favs-active', state.showOnlyFavs);
-            elements.favsFilterBtn.textContent = state.showOnlyFavs ? '★' : '☆';
+            if (icon) {
+                icon.textContent = state.showOnlyFavs ? '★' : '☆';
+            }
             elements.favsFilterBtn.title = state.showOnlyFavs 
                 ? `Showing ${state.favPrompts.size} favorites (click to show all)` 
                 : `Show only favorites (${state.favPrompts.size})`;
@@ -665,9 +667,8 @@
             });
         });
 
-        // Random and shuffle buttons
+        // Random button
         elements.randomBtn.addEventListener('click', showRandomPrompt);
-        elements.shuffleBtn.addEventListener('click', shufflePrompts);
 
         // Seen/Hidden/Fav buttons
         if (elements.markSeenBtn) {

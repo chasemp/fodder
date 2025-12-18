@@ -743,14 +743,27 @@ body {
 
 /* Favs filter button in controls */
 #favs-filter-btn {
-    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: var(--space-sm) var(--space-md);
+    font-size: 0.9rem;
     transition: all var(--transition-fast);
 }
 
+#favs-filter-btn .fav-icon {
+    font-size: 1.1rem;
+    transition: transform var(--transition-fast);
+}
+
 #favs-filter-btn.favs-active {
-    color: var(--color-gold);
-    background: var(--color-espresso);
-    text-shadow: 0 0 4px var(--color-gold);
+    background: var(--color-sienna);
+    color: var(--color-cream);
+    border-color: var(--color-sienna);
+}
+
+#favs-filter-btn.favs-active .fav-icon {
+    transform: scale(1.1);
 }
 
 /* Seen indicator on card */
