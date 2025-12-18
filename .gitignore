@@ -1,0 +1,11 @@
+# Playwright MCP screenshots
+.playwright-mcp/
+
+# OS files
+.DS_Store
+
+# Editor files
+*.swp
+*.swo
+*~
+
