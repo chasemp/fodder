@@ -171,7 +171,7 @@ body {
 .header {
     background: var(--color-cream);
     color: var(--color-espresso);
-    padding: var(--space-sm) var(--space-md);
+    padding: var(--space-xs) var(--space-md);
     text-align: center;
     border-bottom: 2px solid var(--color-gold);
 }
@@ -180,14 +180,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--space-sm);
 }
 
 .header-logo {
-    height: 50px;
+    height: 44px;
     width: auto;
-    max-width: 200px;
+    max-width: 160px;
     object-fit: contain;
+}
+
+@media (min-width: 480px) {
+    .header-logo {
+        height: 52px;
+        max-width: 200px;
+    }
 }
 
 .logo-icon {
