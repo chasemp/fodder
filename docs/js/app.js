@@ -15,6 +15,8 @@
         includeTags: new Set(),
         excludeTags: new Set(),
         persistentExcludedTags: new Set(), // Tags excluded via settings page
+        seenPrompts: new Set(), // Prompts marked as seen
+        hiddenPrompts: new Set(), // Prompts marked as hidden
         currentMode: 'include', // 'include' or 'exclude'
         currentPromptIndex: -1,
         allTags: new Map(), // tag -> count
@@ -48,6 +50,9 @@
         promptList: document.getElementById('prompt-list'),
         swipeHint: document.getElementById('swipe-hint'),
         installPrompt: document.getElementById('install-prompt'),
+        markSeenBtn: document.getElementById('mark-seen-btn'),
+        hideCardBtn: document.getElementById('hide-card-btn'),
+        cardActions: document.getElementById('card-actions'),
         installBtn: document.getElementById('install-btn'),
         dismissInstall: document.getElementById('dismiss-install'),
         // Filter toggle elements
@@ -118,7 +123,12 @@
     // ============================================
     function filterPrompts() {
         state.filteredPrompts = state.prompts.filter(prompt => {
-            // First check persistent exclusions from settings page
+            // First exclude hidden prompts
+            if (state.hiddenPrompts.has(prompt.id)) {
+                return false;
+            }
+
+            // Check persistent exclusions from settings page
             if (state.persistentExcludedTags.size > 0) {
                 const hasPersistentExclude = prompt.tags.some(tag => state.persistentExcludedTags.has(tag));
                 if (hasPersistentExclude) return false;
@@ -301,6 +311,58 @@
         elements.cardTags.innerHTML = idBadge + prompt.tags.map(tag => 
             `<span class="card-tag">#${escapeHtml(tag)}</span>`
         ).join('');
+
+        // Update seen status on card
+        const isSeen = state.seenPrompts.has(prompt.id);
+        elements.promptCard.classList.toggle('is-seen', isSeen);
+
+        // Update action buttons
+        if (elements.markSeenBtn) {
+            elements.markSeenBtn.classList.toggle('seen-active', isSeen);
+            elements.markSeenBtn.textContent = isSeen ? '👁️ Seen ✓' : '👁️ Seen';
+        }
+    }
+
+    function toggleSeenPrompt() {
+        const currentPrompt = state.filteredPrompts[state.currentPromptIndex];
+        if (!currentPrompt) return;
+
+        if (state.seenPrompts.has(currentPrompt.id)) {
+            state.seenPrompts.delete(currentPrompt.id);
+        } else {
+            state.seenPrompts.add(currentPrompt.id);
+        }
+
+        // Save to localStorage
+        localStorage.setItem('fodder_seenPrompts', JSON.stringify([...state.seenPrompts]));
+
+        // Update display
+        displayPrompt(currentPrompt);
+    }
+
+    function hideCurrentPrompt() {
+        const currentPrompt = state.filteredPrompts[state.currentPromptIndex];
+        if (!currentPrompt) return;
+
+        state.hiddenPrompts.add(currentPrompt.id);
+
+        // Save to localStorage
+        localStorage.setItem('fodder_hiddenPrompts', JSON.stringify([...state.hiddenPrompts]));
+
+        // Re-filter and show next card
+        filterPrompts();
+        
+        // Adjust index if needed
+        if (state.currentPromptIndex >= state.filteredPrompts.length) {
+            state.currentPromptIndex = state.filteredPrompts.length - 1;
+        }
+        
+        if (state.filteredPrompts.length > 0) {
+            showRandomPrompt();
+        } else {
+            elements.promptText.textContent = "No more prompts available!";
+            elements.cardTags.innerHTML = '';
+        }
     }
 
     function animateCard() {
@@ -416,6 +478,16 @@
                 state.persistentExcludedTags = new Set(JSON.parse(excludedTags));
             }
 
+            // Load seen/hidden prompts
+            const seenPrompts = localStorage.getItem('fodder_seenPrompts');
+            if (seenPrompts) {
+                state.seenPrompts = new Set(JSON.parse(seenPrompts));
+            }
+            const hiddenPrompts = localStorage.getItem('fodder_hiddenPrompts');
+            if (hiddenPrompts) {
+                state.hiddenPrompts = new Set(JSON.parse(hiddenPrompts));
+            }
+
             // Load session filter state
             const saved = localStorage.getItem('fodder_state');
             if (saved) {
@@ -529,6 +601,20 @@
         // Random and shuffle buttons
         elements.randomBtn.addEventListener('click', showRandomPrompt);
         elements.shuffleBtn.addEventListener('click', shufflePrompts);
+
+        // Seen/Hidden buttons
+        if (elements.markSeenBtn) {
+            elements.markSeenBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                toggleSeenPrompt();
+            });
+        }
+        if (elements.hideCardBtn) {
+            elements.hideCardBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                hideCurrentPrompt();
+            });
+        }
 
         // Card tap for next prompt
         elements.promptCard.addEventListener('click', showRandomPrompt);

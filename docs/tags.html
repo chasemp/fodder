@@ -232,6 +232,45 @@
         .stats-bar strong {
             color: var(--color-mahogany);
         }
+
+        /* Seen/Hidden management */
+        .card-status-section {
+            padding: var(--space-sm) var(--space-md);
+            background: var(--color-cream);
+            border-bottom: 1px solid var(--color-gold);
+        }
+
+        .status-row {
+            display: flex;
+            justify-content: space-around;
+            gap: var(--space-md);
+        }
+
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-size: 0.9rem;
+        }
+
+        .status-icon {
+            font-size: 1rem;
+        }
+
+        .status-label {
+            color: var(--color-neutral);
+        }
+
+        .status-item strong {
+            color: var(--color-mahogany);
+            min-width: 2ch;
+        }
+
+        .status-item .btn-small {
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            margin-left: var(--space-xs);
+        }
     </style>
 </head>
 <body class="tags-page">
@@ -247,6 +286,24 @@
     <div class="stats-bar">
         <span><strong id="active-tags">0</strong> tags enabled</span>
         <span><strong id="available-prompts">0</strong> prompts available</span>
+    </div>
+
+    <!-- Seen/Hidden Management -->
+    <div class="card-status-section">
+        <div class="status-row">
+            <div class="status-item">
+                <span class="status-icon">👁️</span>
+                <span class="status-label">Seen:</span>
+                <strong id="seen-count">0</strong>
+                <button class="btn btn-small btn-text" id="clear-seen-btn">Clear</button>
+            </div>
+            <div class="status-item">
+                <span class="status-icon">🙈</span>
+                <span class="status-label">Hidden:</span>
+                <strong id="hidden-count">0</strong>
+                <button class="btn btn-small btn-text" id="clear-hidden-btn">Clear</button>
+            </div>
+        </div>
     </div>
 
     <!-- Intro -->
@@ -326,10 +383,23 @@
         // Calculate available prompts
         // ============================================
         function countAvailablePrompts() {
-            if (excludedTags.size === 0) return PROMPTS.length;
-            
+            // Get hidden prompts
+            let hiddenPrompts = new Set();
+            try {
+                const hidden = localStorage.getItem('fodder_hiddenPrompts');
+                if (hidden) {
+                    hiddenPrompts = new Set(JSON.parse(hidden));
+                }
+            } catch (e) {}
+
             return PROMPTS.filter(prompt => {
-                return !prompt.tags.some(tag => excludedTags.has(tag));
+                // Exclude hidden prompts
+                if (hiddenPrompts.has(prompt.id)) return false;
+                // Exclude by tags
+                if (excludedTags.size > 0 && prompt.tags.some(tag => excludedTags.has(tag))) {
+                    return false;
+                }
+                return true;
             }).length;
         }
 
@@ -487,6 +557,7 @@
         function init() {
             loadSettings();
             renderTagCategories();
+            loadSeenHiddenCounts();
             
             // Bottom buttons
             document.getElementById('enable-all-btn').addEventListener('click', enableAll);
@@ -495,6 +566,43 @@
             // Top buttons
             document.getElementById('enable-all-btn-top').addEventListener('click', enableAll);
             document.getElementById('disable-all-btn-top').addEventListener('click', disableAll);
+
+            // Seen/Hidden clear buttons
+            document.getElementById('clear-seen-btn').addEventListener('click', clearAllSeen);
+            document.getElementById('clear-hidden-btn').addEventListener('click', clearAllHidden);
+        }
+
+        // ============================================
+        // Seen/Hidden Management
+        // ============================================
+        function loadSeenHiddenCounts() {
+            try {
+                const seenPrompts = localStorage.getItem('fodder_seenPrompts');
+                const hiddenPrompts = localStorage.getItem('fodder_hiddenPrompts');
+                
+                const seenCount = seenPrompts ? JSON.parse(seenPrompts).length : 0;
+                const hiddenCount = hiddenPrompts ? JSON.parse(hiddenPrompts).length : 0;
+                
+                document.getElementById('seen-count').textContent = seenCount;
+                document.getElementById('hidden-count').textContent = hiddenCount;
+            } catch (e) {
+                console.error('Error loading seen/hidden counts:', e);
+            }
+        }
+
+        function clearAllSeen() {
+            if (confirm('Clear all seen markers? This cannot be undone.')) {
+                localStorage.removeItem('fodder_seenPrompts');
+                document.getElementById('seen-count').textContent = '0';
+            }
+        }
+
+        function clearAllHidden() {
+            if (confirm('Restore all hidden prompts? This will make them visible again.')) {
+                localStorage.removeItem('fodder_hiddenPrompts');
+                document.getElementById('hidden-count').textContent = '0';
+                updateStats(); // Recalculate available prompts
+            }
         }
 
         // Start
