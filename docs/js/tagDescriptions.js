@@ -158,7 +158,7 @@ const TAG_DESCRIPTIONS = {
     "deep": {
         name: "Deep",
         category: "mood",
-        description: "Thoughtful questions that make you pause and think about values, meaning, and significant life topics.",
+        description: "Thoughtful questions that make you pause and think about values, meaning, vulnerability, and significant life topics.",
         icon: "🌊"
     },
     "heartwarming": {
@@ -170,9 +170,10 @@ const TAG_DESCRIPTIONS = {
     "adventurous": {
         name: "Adventurous",
         category: "mood",
-        description: "Questions about risk, exploration, and stepping outside comfort zones.",
+        description: "Questions about risk, exploration, mischief, and stepping outside comfort zones.",
         icon: "🧭"
     },
+
     // ==========================================
     // AUDIENCE TAGS
     // ==========================================
@@ -182,80 +183,21 @@ const TAG_DESCRIPTIONS = {
         description: "Appropriate and engaging for everyone from kids to grandparents.",
         icon: "👨‍👩‍👧‍👦"
     },
-    "teens": {
-        name: "Teens",
-        category: "audience",
-        description: "Questions that particularly resonate with teenagers.",
-        icon: "🎧"
-    },
     "adults": {
         name: "Adults",
         category: "audience",
         description: "Questions better suited for mature discussions.",
         icon: "👔"
     },
+
     // ==========================================
-    // SPECIAL CONTENT TAGS (from research)
+    // DEPTH TAGS
     // ==========================================
-    "vulnerability": {
-        name: "Vulnerability",
-        category: "depth",
-        description: "Questions that encourage sharing personal struggles, fears, or regrets. These build deep trust but should be used carefully.",
-        icon: "💔"
-    },
     "values": {
         name: "Values",
         category: "depth",
-        description: "Questions about ethics, beliefs, and what matters most to you.",
+        description: "Questions about ethics, beliefs, stewardship, global citizenship, and what matters most to you.",
         icon: "⚖️"
-    },
-    "digitalethics": {
-        name: "Digital Ethics",
-        category: "special",
-        description: "Questions about technology's impact on relationships, AI, social media, and online life.",
-        icon: "🤖"
-    },
-    "stewardship": {
-        name: "Environmental Stewardship",
-        category: "special",
-        description: "Questions about nature, climate, sustainability, and our relationship with the planet.",
-        icon: "🌍"
-    },
-    "globalcitizen": {
-        name: "Global Citizenship",
-        category: "special",
-        description: "Questions about culture, traditions, and what connects us across borders.",
-        icon: "🌐"
-    },
-    "bravespace": {
-        name: "Brave Space",
-        category: "special",
-        description: "Questions designed for difficult but important conversations about diversity, inclusion, and social issues. Requires psychological safety.",
-        icon: "🛡️"
-    },
-    "gratitude": {
-        name: "Gratitude",
-        category: "emotional",
-        description: "Questions that focus on thankfulness and appreciation.",
-        icon: "🙏"
-    },
-    "legacy": {
-        name: "Legacy",
-        category: "depth",
-        description: "Questions about how you want to be remembered and what you want to pass on.",
-        icon: "📜"
-    },
-    "risky": {
-        name: "Risky/Mischief",
-        category: "mood",
-        description: "Questions about rule-breaking, embarrassing moments, and minor failures. Great for bonding through shared imperfection.",
-        icon: "🎲"
-    },
-    "gross": {
-        name: "Gross/Absurd",
-        category: "mood",
-        description: "Intentionally disgusting or bizarre hypotheticals. Popular with teens and those who enjoy shock humor.",
-        icon: "🤢"
     }
 };
 
@@ -285,16 +227,6 @@ const TAG_CATEGORIES = {
         name: "Depth & Values",
         description: "Questions that go deeper into character and beliefs",
         order: 5
-    },
-    emotional: {
-        name: "Emotional Intelligence",
-        description: "Questions focused on feelings and self-understanding",
-        order: 6
-    },
-    special: {
-        name: "Special Topics",
-        description: "Specific thematic areas for targeted discussions",
-        order: 7
     }
 };
 
