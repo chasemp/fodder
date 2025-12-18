@@ -182,10 +182,11 @@ body {
     gap: var(--space-sm);
 }
 
-.header-logo {
-    height: 40px;
+.header-icon {
+    height: 32px;
     width: auto;
     object-fit: contain;
+    border-radius: var(--radius-sm);
 }
 
 .logo-icon {
