@@ -3,7 +3,7 @@
  * Enables offline functionality for the PWA
  */
 
-const CACHE_VERSION = '0.0.15';
+const CACHE_VERSION = '0.0.16';
 const CACHE_NAME = `fodder-cache-${CACHE_VERSION}`;
 
 // Assets to cache on install
@@ -17,7 +17,7 @@ const STATIC_ASSETS = [
     '/js/prompts.js',
     '/js/tagDescriptions.js',
     '/assets/fodder_icon.png',
-    '/assets/fodder_logo_transparent_bg.png',
+    '/assets/fodder_logo_light_bg.png',
     '/assets/fodder_splash.png'
 ];
 
